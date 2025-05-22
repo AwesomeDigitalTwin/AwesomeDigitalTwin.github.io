@@ -85,8 +85,8 @@ section.smaller {
 }
 
 .speakerpic img {
-	width: 180px;
-	height: 180px;
+	width: 128px;
+	height: 128px;
   	display: block;
   	object-fit: scale-down;
  }

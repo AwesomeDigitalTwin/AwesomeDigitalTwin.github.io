@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ICRA - Digital Twins - Workshop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+
+    <link href="./css/scrolling-nav.css" rel="stylesheet">
+    <link href="./css/style.css" rel="author stylesheet">
+
+    <style>
+
+        .pc-column {
+            width: 270px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .pc_list_item {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .parallax-header {
+            position: relative;
+            height: 100vh; /* full viewport height */
+            overflow: hidden;
+            color: white;
+        }
+
+        .parallax-bg {
+            background-image: url('./images/26-ICRA-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* fill the header completely */
+            z-index: -1;
+            transform: translateY(0px);
+        }
+
+        .header-content {
+            position: relative;
+            top: 20%; /* move the text higher */
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+    <div class="container bar-container">
+        <a class="title-head" href="https://2026.ieee-icra.org" target="_blank">ICRA 2026 All Workshops</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- 				<li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#schedule">Schedule & Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#callpapers">Call for Papers </a>
+                </li>
+                <!--  				<li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
+                                    </li> -->
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="parallax-header text-white">
+    <div class="parallax-bg"></div>
+    <div class="text-center header-content">
+        <div class="container titlebox" style="display: inline-block; background-color:rgba(0,0,0,0.7); width:auto;">
+            <p style="text-align: center; margin-bottom: 0px" class="title">
+                1st Workshop on <br><b>Generative Digital Twins for Real2Sim and Sim2Real Transfer in Robotics</b>
+            </p>
+            <!-- <p style="text-align: center; margin-bottom: 0" class="subtitle">
+              International Conference on Computer Vision (ICRA 2026)
+            </p> -->
+        </div>
+    </div>
+</header>
+
+<hr class="half-rule"/>
+<section id="about" style="padding:70px 0 0 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class=titlesec>About</span>
+                <span>
+			<br>
+				This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between simulation and reality (Sim2Real) and reality and simulation (Real2Sim) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments—offer a powerful approach to bridging these divides. We will focus on generative digital twins, where AI-driven models automatically construct, update, and diversify twins to enhance robustness, adaptability, and scalability. Topics will include: (i) pipelines for digital twin generation (Real2Sim); (ii) benchmarks and case studies for Sim2Real transfer; (iii) learning algorithms leveraging adaptive twins; and (iv) applications across industrial, household, and mobile robotics. The workshop will bring together leading researchers from robotics, machine learning, and computer graphics, fostering interdisciplinary exchange through invited talks, poster sessions, and panel discussions. By highlighting recent advances and charting future directions, this event aims to define a roadmap for how generative digital twins can enable more reliable and generalizable robotic intelligence.
+				<br>
+				<a href="https://arxiv.org/abs/2504.13159" target="_blank">Digital Twin Generation from Visual Data: A Survey</a>				
+			</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="event">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Event Information</span>
+                This is a primarily in-person workshop, held at the <i>ICRA 2026</i>. The exact room location will be
+                announced when the schedule is finalized.
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
+<section class="">
+    <div class="container" id="schedule">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Schedule</span>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th style="width: 7%"> Time</th>
+                        <th style="width: 20%"></th>
+                        <th> Info</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="width: 7%"><b> 8:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b>Organizers:</b> Introductory Remarks</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 8:30 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://msavva.github.io/files/photo.jpg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://msavva.github.io" target="_blank">Manolis Savva</a></b><br>
+                            <i> SFU </i><br><br>
+                            <b> Title: </b> Towards realistic & interactive 3D simulation for embodied AI <br>
+                            <a data-toggle="collapse" data-target="#abstract-03" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-03" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 9:00 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://goldberg.berkeley.edu/Headshot-KG-Ambi-150dpi-sm.jpg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://goldberg.berkeley.edu" target="_blank">Ken Goldberg</a></b><br>
+                            <i> UC Berkeley </i><br><br>
+                            <b> Title: </b> Sim-to-Real Translation for Scalable Benchmarking in Robotics <br>
+                            <a data-toggle="collapse" data-target="#abstract-05" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-05" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 9:30 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b> Spotlight Talks </b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 10:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b> Coffee & Posters </b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 11:00 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/corl/_jcr_content/root/responsivegrid/nv_container_804997743/nv_container_copy_18/nv_container_1679568822/nv_image_copy.coreimg.100.850.jpeg/1764613437034/yuke-zhu-featured-800x800.jpeg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://yukezhu.me" target="_blank">Yuke Zhu</a></b><br>
+                            <i> NVIDIA, University of Texas at Austin </i><br><br>
+                            <b> Title: </b> blank <br>
+                            <a data-toggle="collapse" data-target="#abstract-YZ" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-YZ" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 11:30 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://jiajunwu.com/images/Jiajun_Wu.jpg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://jiajunwu.com" target="_blank">Jiajun Wu</a></b><br>
+                            <i> Stanford </i><br><br>
+                            <b> Title: </b> blank <br>
+                            <a data-toggle="collapse" data-target="#abstract-JW" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-JW" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 12:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b> Lunch </b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 13:30 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://www.oiermees.com/authors/admin/avatar_huf77bb6f3481ea674f51f312221d30a5e_499601_270x270_fill_q75_lanczos_center.jpg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://www.oiermees.com" target="_blank">Oier Mees</a></b><br>
+                            <i> Microsoft </i><br><br>
+                            <b> Title: </b> blank <br>
+                            <a data-toggle="collapse" data-target="#abstract-OM" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-OM" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 14:00 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://eng.ox.ac.uk/media/1170/ingmar-posner-provided.jpg?width=250&height=250&v=1d9e229a3196fb0>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://eng.ox.ac.uk/people/ingmar-posner/" target="_blank">Ingmar
+                                Posner</a></b><br>
+                            <i> Oxford </i><br><br>
+                            <b> Title: </b> Photo-realistic AI Avatars <br>
+                            <a data-toggle="collapse" data-target="#abstract-09" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-09" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 14:30 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=images/speakers/OliverBrock.jpg>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://www.tu.berlin/en/robotics/about-rbo/prof-dr-oliver-brock"
+                                           target="_blank">Oliver Brock</a></b><br>
+                            <i> TUB </i><br><br>
+                            <b> Title: </b> Beyond the Digital Statue: Generating Composable and Articulated 3D Assets
+                            <br>
+                            <a data-toggle="collapse" data-target="#abstract-OB" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-OB" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 15:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b> Coffee </b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 15:30 </b></td>
+                        <td style="width: 20%">
+                            <img class="figure-img img-fluid" src=https://i.cs.hku.hk/~hszhao/picture/hengshuangzhao.png>
+                        </td>
+                        <td>
+                            <b>Keynote: <a href="https://i.cs.hku.hk/~hszhao/" target="_blank">Hengshuang
+                                Zhao</a></b><br>
+                            <i> The University of Hong Kong </i><br><br>
+                            <b> Title: </b> Closing the Sim2Real Gap with Physically Accurate SimReady Assets and
+                            Benchmarks <br>
+                            <a data-toggle="collapse" data-target="#abstract-11" class="collapsed abstract"
+                               aria-expanded="false"> Abstract </a>
+                            <div id="abstract-11" class="news collapse" style="margin-top: 10px; height: 22px;"
+                                 aria-expanded="false">
+                                blank
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 16:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b> Discussion. <br> Panelists:</b> Jiajun Wu, Ken Goldberg, Yuke Zhu, Oier Mees, Ingmar
+                            Posner, Oliver Brock, Hengshuang Zhao, Manolis Savva
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 7%"><b> 17:00 </b></td>
+                        <td style="width: 20%"></td>
+                        <td><b>Organizers:</b> Closing Remarks</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
+<section id="callpapers" style="padding: 70px 0 0 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Call for Papers</span><br>
+
+                <h5 style="font-weight: bold">Targeted Topics</h5>
+                The gDT-IV Workshop at ICRA 2026 welcomes submissions on all aspects of generating digital twins from
+                images and videos, especially (but not limited to):
+                <br><br>
+                <ul>
+                    <li>Applications of digital twins in robotics, media content creation, AI-driven video synthesis,
+                        interior design, construction monitoring, and gaming.
+                    </li>
+                    <li>Streaming and compression techniques for sharing large 3D scenes over the web.</li>
+                    <li>Synchronization of the Digital Twin model with the video stream.</li>
+                    <li>3D Gaussian Splatting (3DGS) and its extensions for dynamic scenes.</li>
+                    <li>Lighting variations, shadows, material properties, and reflections in 3DGS reconstruction.</li>
+                    <li>Modeling articulated object parts and their motion constraints from video (e.g., cabinets).</li>
+                    <li>Inpainting and completion techniques for occluded regions in complex indoor scenes.</li>
+                    <li>Retrieval-based and generative hybrid pipelines for 3D object and scene creation.</li>
+                    <li>Learning object properties (mass, softness, friction) from videos.</li>
+                    <li>Physics-informed 3D generation, blending physical simulation with visual generation.</li>
+                    <li>Semantic 3D segmentation for scene understanding (object-level vs. fine-grained).</li>
+                </ul>
+                <h5 style="font-weight: bold">Submission Tracks</h5>
+
+                <p>
+                    We will have two submission tracks:
+                </p>
+
+                <ol>
+                    <li>
+                        <b>Archival Track</b><br>
+                        <p style="margin-bottom:6px;">
+                            Papers should present <b>original, unpublished work</b> and follow a strict <b>double-blind
+                            review</b>.
+                            Manuscripts must be prepared with the ICRA 2026 Author Kit and be <b>4–8 pages</b>
+                            (references and appendices may extend beyond 8 pages).
+                            Accepted papers will appear in the official ICRA 2026 Workshop Proceedings, and authors will
+                            present in person.
+                        </p>
+                        <p style="margin-bottom:0;">
+                            We follow the same policy as the main ICRA conference for this track. By submitting to this
+                            track, the authors acknowledge that it has not been previously published or accepted for
+                            publication in substantially similar form in any peer-reviewed venue including journal,
+                            conference or workshop, or archival forum. Furthermore, no publication substantially similar
+                            in content (defined as having 20 percent or more overlap) has been or will be registered or
+                            submitted to this or another conference, workshop, or journal during the review period.
+                            Violation of any of these conditions will lead to rejection, and will be reported to the
+                            other venue to which the submission was sent. For more details policy, please check the <a
+                                href="https://2026.ieee-icra.org" target="_blank">official
+                            policy at ICRA 2026</a>.
+                        </p>
+                        <p style="margin-bottom:0;">
+                            Submit to the Archival Track via:&nbsp;
+                            <a href="https://openreview.net/"
+                               target="_blank">OpenReview</a>
+                        </p>
+                    </li>
+                    <br>
+
+                    <li>
+                        <b>Non-Archival Track</b><br>
+                        <p>
+                            This flexible track welcomes a wider range of contributions:
+                        </p>
+                        <ul style="margin-top:0;">
+                            <li><i>Extended abstracts &amp; short papers</i> — up to 4 pages, suitable for work in
+                                progress, negative results, or position papers. References and appendices may extend
+                                beyond 4 pages.
+                            </li>
+                            <li><i>Previously published work</i> — including papers accepted at ICRA 2026 or other
+                                venues in the last year.
+                            </li>
+                        </ul>
+                        <p style="margin-top:20px;">
+                            All submissions should be formated with the ICRA 2026 Author Kit. Submissions remain <b>double-blind</b>
+                            for review but <b>will not</b> appear in proceedings. Thus, papers that have already been
+                            published at major conferences are also welcome. Authors may also submit their work to
+                            future conferences or journals after acceptance to this workshop.
+                        </p>
+                        <p>
+                            Submit to the Non-Archival Track via: <a
+                                href="https://openreview.net/"
+                                target="_blank">OpenReview</a>
+                        </p>
+                    </li>
+                </ol>
+
+                <h5 style="font-weight: bold">Important Dates</h5>
+                <ul>
+                    <li style="display: list-item">
+                        Archival Submission Deadline: 2026
+                    </li>
+                    <li style="display: list-item">
+                        Archival Author Notifications: 2026
+                    </li>
+                    <li style="display: list-item">
+                        Archival Camera-Ready: 2026
+                    </li>
+                    <br>
+                    <li style="display: list-item">
+                        Non-Archival Submission Deadline: 2026
+                    </li>
+                    <li style="display: list-item">
+                        Non-Archival Author Notifications: 2026
+                    </li>
+                    <li style="display: list-item">
+                        Non-Archival Camera-Ready: 2026
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
+<section id="organizers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Organizers</span><br>
+
+                <div class="row">
+                    <a href="https://www.linkedin.com/in/andrewmelnik"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="./images/organizers/Andrew.jpg"
+                             class="figure-img img-fluid"
+                             alt="Andrew Melnik">
+                        <p class="profname">Andrew Melnik</p>
+                        <p class="institution">University of Bremen</p>
+                    </a>
+
+					<a href="https://albilo17.github.io/"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="profpic xlarge-1 columns">
+						<img src="https://albilo17.github.io/assets/img/alberta.jpg"
+							 class="figure-img img-fluid"
+							 alt="Alberta Longhini">
+						<p class="profname">Alberta Longhini</p>
+						<p class="institution">KTH</p>
+					</a>
+
+					<a href="https://jonfranc.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="images/organizers/Jonathan.jpg"
+                             class="figure-img img-fluid"
+                             alt="Jonathan Francis">
+                        <p class="profname">Jonathan Francis</p>
+                        <p class="institution">Bosch Center for AI + CMU</p>
+                    </a>
+
+                </div>
+
+                <div class="row">
+					<a href="https://uksangyoo.github.io"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="profpic xlarge-1 columns">
+						<img src="https://uksangyoo.github.io/assets/img/prof_pic.jpg"
+							 class="figure-img img-fluid"
+							 alt="Uksang Yoo">
+						<p class="profname">Uksang Yoo</p>
+						<p class="institution">Carnegie Mellon University</p>
+					</a>
+
+					<a href="https://ariannaliu.github.io"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="https://ariannaliu.github.io/images/ZhixuanLiu25.jpg"
+                             class="figure-img img-fluid"
+                             alt="Zhixuan Liu">
+                        <p class="profname">Zhixuan Liu</p>
+                        <p class="institution">Carnegie Mellon University</p>
+                    </a>
+
+                    <a href="https://maggiewang.org"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="https://maggi3wang.github.io/assets/images/profile.jpg"
+                             class="figure-img img-fluid"
+                             alt="Maggie Bai Wang">
+                        <p class="profname">Maggie Bai Wang</p>
+                        <p class="institution">Stanford</p>
+					</a>
+
+					<a href="https://ai.uni-bremen.de/team/mehreen_naeem"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="profpic xlarge-1 columns">
+						<img src="https://ai.uni-bremen.de/_media/wiki/mehreen.jpg"
+							 class="figure-img img-fluid"
+							 alt="Mehreen Naeem">
+						<p class="profname">Mehreen Naeem</p>
+						<p class="institution">Bremen University</p>
+					</a>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Contact and Information</span><br>
+                <span style="justify-content: left; text-align:left;">Please forward all questions to <a href="mailto:gdt-iv-pcs@googlegroups.com">gdt-iv-pcs@googlegroups.com</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class=titlesec>Sponsors</span><br>
+                <img src=images/sponsors/tencent.png style="width:640px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Custom JavaScript for this theme -->
+<script src="js/scrolling-nav.js"></script>
+
+<script>
+    $(window).on("scroll", function () {
+        var scrollTop = $(window).scrollTop();
+        $(".parallax-bg").css("transform", "translateY(" + scrollTop * 0.4 + "px)");
+    });
+</script>
+</body>
+</html>

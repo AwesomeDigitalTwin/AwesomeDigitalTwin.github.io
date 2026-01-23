@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>ICCV - Digital Twins - Workshop</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom styles for this template -->
+
+
+	<link href="./css/scrolling-nav.css" rel="stylesheet">
+	<link href="./css/style.css" rel="author stylesheet">
+
+	<style>
+
+		.pc-column {
+		    width:270px;
+		    display:inline-block;
+		    vertical-align: top;
+		}
+		
+		.pc_list_item {
+		    display:inline-block;
+		    width:200px;
+		}
+
+.parallax-header {
+  position: relative;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+  color: white;
+}
+
+.parallax-bg {
+  background-image: url('./images/25-ICCV-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* fill the header completely */
+  z-index: -1;
+  transform: translateY(0px);
+}
+
+.header-content {
+  position: relative;
+  top: 20%;  /* move the text higher */
+  width: 100%;
+}
+		
+	</style>
+	    
+    </head>
+
+    <body id="page-top">
+		
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+	    <div class="container bar-container">
+		<a class="title-head" href="https://iccv.thecvf.com/virtual/2025/events/workshop" target="_blank">ICCV 2025 All Workshops</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+		    <ul class="navbar-nav ml-auto">
+<!-- 				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+				</li> -->
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#schedule">Schedule & Speakers</a>
+				</li>
+ 				<li class="nav-item">
+                    		    <a class="nav-link js-scroll-trigger" href="#callpapers">Call for Papers </a>
+				</li> 
+ 				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
+		    		</li>
+<!-- 				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+				</li> -->
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+				</li>
+<!-- 			    	<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="/" target="_blank">(Most Recent Instance)</a>
+				</li> -->
+		    </ul>
+		</div>
+	    </div>
+	</nav>
+
+<header class="parallax-header text-white">
+  <div class="parallax-bg"></div>
+  <div class="text-center header-content">
+    <div class="container titlebox" style="display: inline-block; background-color:rgba(0,0,0,0.7); width:auto;">
+      <p style="text-align: center; margin-bottom: 2" class="title">
+        1st Workshop on <br><b>Generating Digital Twins from Images and Videos</b>
+      </p>
+      <p style="text-align: center; margin-bottom: 0" class="subtitle">
+        International Conference on Computer Vision (ICCV 2025) <br>
+        Oct 20th, 2025 - Room 319 A - Honolulu, Hawai'i
+      </p>
+    </div>
+  </div>
+</header>
+		
+
+<!-- 		<header class="headercontainer bg-primary text-white" style="padding: 0%; max-height: none; ">
+	    <div style="background-color: rgba(160,160,160,0.0)" class="text-center">
+		<div style="padding-bottom: 6%; padding-top: 6%; background-image: url('./images/banner.jpg'); background-size: cover; background-position: center">
+
+	    <div class="container titlebox"; style="display: inline-block; background-color:rgba(0,0,0, 0.7); width:auto;">
+		<p style="text-align: center; margin-bottom: 2" class="title">1st Workshop on <br><b>Generating Digital Twins from Images and Videos</b></p>
+		<p style="text-align: center; margin-bottom: 0" class="subtitle">International Conference on Computer Vision (ICCV 2025) <br> Oct 20th, 2025 - Room 319 A - Honolulu, Hawai'i</p>
+		
+		</div>
+	    </div>
+	    </div>
+	</header> -->
+
+		<hr class="half-rule"/>
+		<section id="about" style="padding:70px 0 0 0">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+			<!-- div style="justify-content: center; text-align:center;"><img src="https://semrob.github.io/images/semrob_2024_logo.png" width="700px"></div-->
+			<span class=titlesec>About</span>
+			<span>
+			<br>
+				In this workshop, we focus on 3D models enriched with processes and semantic connections, similar to those in computer game and robotic environments. These models can range in fidelity from simplified 3D representations (Digital Cousins) to highly accurate reconstructions of real-world counterparts (Digital Twins). 3D Gaussian Splatting and Diffusion Models, have demonstrated impressive success in generating 3D representations from images and video. The next frontier in 3D representation is enriching models by integrating both physical and semantic object properties through generative AI and retrieval-based approaches. 
+				<br>
+				<a href="https://arxiv.org/abs/2504.13159" target="_blank">Digital Twin Generation from Visual Data: A Survey</a>				
+			</span>
+		    </div>
+		</div>
+	    </div>
+	</section>
+
+	<!-- <section id="event">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+			<span class=titlesec>Event Information</span>
+			<span>
+			This is a primarily in-person workshop, held at the <i>2025 International Conference on Computer Vision</i> (ICCV), in Honolulu, Hawai'i on <b>Oct 20th, 2025</b>. The exact room location will be announced when the schedule is finalized.
+			<br>
+<!-- 			The submission deadline for non-archival papers is <s><b>July 31, 2025</b></s>   -   <b style="color: red;"><s>August 19, 2025</s></b> (see more info below). -->
+			<!-- </br>
+			</br>
+			The room location is ..., in the ..., at .... You might find the travel information on the ... website helpful.
+			</br>
+			</br>
+			Poster session location: outside the lower right-side doors of <b>...</b>.
+			</br>
+			</br>
+			ICCV 2025 Generating Digital Twins from Images and Videos is <b>Workshop #...</b>, on the official ICCV schedule.
+			</span> -->
+		    </div>
+		</div>
+	    </div>
+	</section> -->
+
+	<hr class="half-rule"/>
+	<section class="">
+		<div class="container" id="schedule">
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<span class="titlesec"> Schedule - Room 319 A - Oct 20th, 2025 </span><br>
+					<table class="table table-striped">
+						<t
+						<tr>
+							<th style="width: 7%"> Time </th>
+<!-- 							<th style="width: 20%"> Speakers </th> -->
+							<th style="width: 20%"> </th>
+							<th> Info </th>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 8:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b>Organizers:</b> Introductory Remarks </td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 8:30 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Manolis.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://msavva.github.io" target="_blank">Manolis Savva</a></b><br>
+								<i> SFU </i><br><br>
+								<b> Title: </b> Towards realistic & interactive 3D simulation for embodied AI <br>
+								<a href="https://youtu.be/P40vtWfiebQ" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-MS" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-MS" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									3D simulators are increasingly being used to develop and evaluate embodied AI agents that perceive and act in realistic environments. Much of the prior work in this space has treated simulators as "black boxes" within which learning algorithms are to be deployed. However, the system characteristics of the simulation platforms themselves and the datasets that are used with these platforms both greatly impact the feasibility and the outcomes of experiments involving simulation. In this talk, I will describe recent projects that outline emerging challenges and opportunities in the development of 3D simulation for embodied AI, in particular focusing on controllable generation of articulated objects and interactive 3D scenes for creating digital twins of interior spaces.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 9:00 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Katerina.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://www.cs.cmu.edu/~katef/" target="_blank">Katerina Fragkiadaki</a><br>
+								<i> CMU </i><br><br>
+								<b> Title: </b> Sim-to-Real Translation for Scalable Benchmarking in Robotics <br>
+								<a href="https://youtu.be/vknqhQMEESc" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-KF" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-KF" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									I will present our recent work on jointly segmenting and reconstructing 3D scenes from images using compositional diffusion models, and on leveraging state-of-the-art reality-to-simulation pipelines to create a general, scalable, and continually evolving benchmark for robot generalist policies. This benchmark incorporates human preference crowdsourcing to enable large-scale, adaptive evaluation of vision-language-action models in simulation, building on recent advances in real-to-sim translation and modern physics engines.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 9:30 </b> </td>
+							<td style="width: 20%"> </td>
+							<td>
+								<b> Spotlight Talks (6 minutes each)</b><br><br>
+								<div style="font-size: 0.8em;">
+									<b>DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness</b><br>
+									<i>Ruining Li, Chuanxia Zheng, Christian Rupprecht, Andrea Vedaldi</i><br><br>
+
+									<b>PICO: Reconstructing 3D People In Contact with Objects</b><br>
+									<i>Alpár Cseke, Shashank Tripathi, Sai Kumar Dwivedi, Arjun Lakshmipathy, Agniv Chatterjee, Michael J. Black, Dimitrios Tzionas</i><br><br>
+
+									<b>DeGauss: Dynamic-Static Decomposition with Gaussian Splatting for Distractor-free 3D Reconstruction</b><br>
+									<i>Rui Wang, Quentin Lohmeyer, Mirko Meboldt, Siyu Tang</i><br><br>
+
+									<b>Robot Learning from Any Images</b><br>
+									<i>Siheng Zhao, Jiageng Mao, Wei Chow, Zeyu Shangguan, Tianheng Shi, Rong Xue, Yuxi Zheng, Yijia Weng, Yang You, Daniel Seita, Leonidas Guibas, Sergey Zakharov, Vitor Guizilini, Yue Wang</i><br><br>
+
+									<b>MonoFusion: Sparse-View 4D Reconstruction via Monocular Fusion</b><br>
+									<i>Zihan Wang, Jeff Tan, Tarasha Khurana, Neehar Peri, Deva Ramanan</i><br><br>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 10:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b> Coffee & Posters ExHall II </b> <br>ASSIGNED BOARDS: Numbers 164 to 182 <br>(refer to poster <b>badges</b> in the Accepted Papers section below)</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 11:00 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Marc.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://people.inf.ethz.ch/pomarc/" target="_blank">Marc Pollefeys</a></b><br>
+								<i> ETH Zurich </i><br><br>
+								<b> Title: </b> Spatial AI <br>
+								<a href="https://youtu.be/EKHfl0rqaQw" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-07" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-07" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									In this talk we’ll discuss how to build rich 3D representations of the environment to assist people and robots to perform tasks.  We’ll first discuss how to build visual 3D maps of environments and use those for visual (re)localization, spatial data access and navigation.  We’ll also discuss how to build rich 3D semantic representations that enable queries and interactions with the scene.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 11:30 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Jiajun.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://jiajunwu.com" target="_blank">Jiajun Wu</a></b><br>
+								<i> Stanford </i><br><br>
+								<b> Title: </b> Two Paradigms for Building Digital Twins <br>
+								<a href="https://youtu.be/AmZaoqXtZv4" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-06" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-06" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									Much of our visual world has its intrinsic, physical structure: scenes are made of objects; objects have their geometry, texture, material, and physical properties. With the rapid development of neural visual generative models, what role does such structural information play, or do we still need it at all?  In this talk, I will discuss our recent efforts on scene and object understanding, reconstruction, and generation via distilling such physical intrinsics from pre-trained vision models, and show that we can now build models that infer object shape, texture, material, and physics, as well as scene context, all from a single image or video, and use them for controllable, action-conditioned 4D scene generation.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 12:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b> Lunch </b></td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 13:30 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=images/speakers/LeiLi.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://craigleili.github.io" target="_blank">Lei Li</a></b><br>
+								<i> University of Virginia </i><br><br>
+								<b> Title: </b> Learning Interactable 3D Worlds <br>
+								<a href="https://youtu.be/5_oiFCEl9Xc" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-10" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-10" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									I will present our recent work on modeling high-fidelity, interactable 3D virtual worlds. A central challenge we aim to address is to create 3D worlds that are not only visually realistic but also structurally grounded, enabling dynamic human interactions. Our research begins by constructing large-scale, even infinite 3D scenes with diffusion models that capture fine geometric details, providing a strong foundation for scene generation. To further enrich these 3D scenes, we generate high-fidelity 3D objects with image-based conditioning, and model part-level dynamics of objects to support functional understanding and interactions. We then analyze human behaviors within these scene contexts and synthesize realistic human motions interacting with 3D objects, thus bringing 3D scenes to life. Together, these efforts represent a step toward building faithful digital replicas of physical environments.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 14:00 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Matthias.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://www.niessnerlab.org" target="_blank">Matthias Nießner</a></b><br>
+								<i> Technical University of Munich </i><br><br>
+								<b> Title: </b> A Digital Twin is all you need <br>
+								<a href="https://youtu.be/uBj_Rz71SX0" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-MN" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-MN" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									I will talk about our latest research on creating photo-realistic AI Avatars. Here, the main goal is to create virtual characters that can are visually indistinguishable from photos and videos of real people. Further, we aim to control such avatars with multi-modal control signals such as animation rigs, text, or voice in order to replicate real-world conversations and leverage our avatars for 3D content creation. Ultimately, the goal is to witness the evolution of photos and videos into interactive, holographic 3D content that is indistinguishable from the physical reality. To this end, we focus on the possibility of capturing and sharing 3D photos with friends, family, or through social media platforms. Imagine the ability to comprehensively document historical events along with the participating people for future generations, or to generate content for upcoming applications in augmented and virtual reality.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 14:30 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Yanpei.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://yanpei.me" target="_blank">Yanpei Cao</a></b><br>
+								<i> Chief Scientist & Co-founder @ Tripo AI </i><br><br>
+								<b> Title: </b> Beyond the Digital Statue: Generating Composable and Articulated 3D Assets <br>
+								<a href="https://youtu.be/w9YJuVYoxu4" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-YC" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-YC" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									blank
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 7%"> <b> 15:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b> Coffee </b></td>
+						</tr>							
+						<tr>
+							<td style="width: 7%"> <b> 15:30 </b></td>
+							<td style="width: 20%">
+								<img class="figure-img img-fluid" src=./images/speakers/Steve.jpg>
+							</td>
+							<td>
+								<b>Keynote: <a href="https://www.linkedin.com/in/stevexiecbs/" target="_blank">Steve Xie</a></b><br>
+								<i> Founder & CEO of <a href="https://lightwheel.ai" target="_blank">Lightwheel</a></i><br><br>
+								<b> Title: </b> Closing the Sim2Real Gap with Physically Accurate SimReady Assets and Benchmarks <br>
+								<a href="https://youtu.be/GGKMgcQqqJg" target="_blank"><span style="color:red; font-weight:bold;">YouTube</span></a><br>
+								<a data-toggle="collapse" data-target="#abstract-SX" class="collapsed abstract" aria-expanded="false"> Abstract </a>
+								<div id="abstract-SX" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+									blank
+								</div>
+							</td>
+						</tr>						
+						<tr>
+							<td style="width: 7%"> <b> 16:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b> Discussion. <br> Panelists:</b> Manolis Savva, Marc Pollefeys, Lei Li, Matthias Nießner, Yanpei Cao </td>
+						</tr>							
+						<tr>
+							<td style="width: 7%"> <b> 17:00 </b> </td>
+							<td style="width: 20%"> </td>
+							<td><b>Organizers:</b> Closing Remarks </td>
+						</tr>
+						</tbody>
+					</table>
+					<a href="https://github.com/AwesomeDigitalTwin/AwesomeDigitalTwin.github.io/blob/main/2025_ICCV.html"
+					   target="_blank" style="opacity: 0; transition: opacity 0.2s;" onmouseover="this.style.opacity='1';" onmouseout="this.style.opacity='0';">Edit</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="half-rule"/>
+	<section id="papers" style="padding: 70px 0 0 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<span class="titlesec">Accepted Papers</span><br><br>
+					
+					<!-- Papers will be loaded dynamically by JavaScript -->
+					<div id="papers-container">
+						<p style="text-align: center; color: #666;">Loading papers...</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="half-rule"/>
+	<section id="callpapers" style="padding: 70px 0 0 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<span class="titlesec">Call for Papers</span><br>
+	
+					<h5 style="font-weight: bold">Targeted Topics</h5>
+					The gDT-IV Workshop at ICCV 2025 welcomes submissions on all aspects of generating digital twins from images and videos, especially (but not limited to):
+					<br><br>
+					<ul>
+						<li>Applications of digital twins in robotics, media content creation, AI-driven video synthesis, interior design, construction monitoring, and gaming.</li>
+						<li>Streaming and compression techniques for sharing large 3D scenes over the web.</li>
+						<li>Synchronization of the Digital Twin model with the video stream.</li>
+						<li>3D Gaussian Splatting (3DGS) and its extensions for dynamic scenes.</li>
+						<li>Lighting variations, shadows, material properties, and reflections in 3DGS reconstruction.</li>
+						<li>Modeling articulated object parts and their motion constraints from video (e.g., cabinets).</li>
+						<li>Inpainting and completion techniques for occluded regions in complex indoor scenes.</li>
+						<li>Retrieval-based and generative hybrid pipelines for 3D object and scene creation.</li>
+						<li>Learning object properties (mass, softness, friction) from videos.</li>
+						<li>Physics-informed 3D generation, blending physical simulation with visual generation.</li>
+						<li>Semantic 3D segmentation for scene understanding (object-level vs. fine-grained).</li>
+					</ul>
+					<h5 style="font-weight: bold">Submission Tracks</h5>
+
+					<p>
+					We will have two submission tracks:
+					</p>
+
+					<ol>
+						<li>
+							<b>Archival Track</b><br>
+							<p style="margin-bottom:6px;">
+								Papers should present <b>original, unpublished work</b> and follow a strict <b>double-blind review</b>.  
+								Manuscripts must be prepared with the ICCV 2025 Author Kit and be <b>4–8 pages</b> (references and appendices may extend beyond 8 pages).  
+								Accepted papers will appear in the official ICCV 2025 Workshop Proceedings, and authors will present in person.
+							</p>
+							<p style="margin-bottom:0;">
+								We follow the same policy as the main ICCV conference for this track. By submitting to this track, the authors acknowledge that it has not been previously published or accepted for publication in substantially similar form in any peer-reviewed venue including journal, conference or workshop, or archival forum. Furthermore, no publication substantially similar in content (defined as having 20 percent or more overlap) has been or will be registered or submitted to this or another conference, workshop, or journal during the review period. Violation of any of these conditions will lead to rejection, and will be reported to the other venue to which the submission was sent. For more details policy, please check the <a href="https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines" target="_blank">official policy at ICCV 2025</a>.
+							</p>
+							<p style="margin-bottom:0;">
+								Submit to the Archival Track via:&nbsp;
+								<a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/gDT-IV" target="_blank">OpenReview</a>
+							</p>
+						</li><br>
+	
+						<li>
+							<b>Non-Archival Track</b><br>
+							<p>
+								This flexible track welcomes a wider range of contributions:
+							</p>
+							<ul style="margin-top:0;">
+								<li><i>Extended abstracts &amp; short papers</i> — up to 4 pages, suitable for work in progress, negative results, or position papers. References and appendices may extend beyond 4 pages.</li>
+								<li><i>Previously published work</i> — including papers accepted at ICCV 2025 or other venues in the last year.</li>
+							</ul>
+							<p style="margin-top:20px;">
+								All submissions should be formated with the ICCV 2025 Author Kit. Submissions remain <b>double-blind</b> for review but <b>will not</b> appear in proceedings. Thus, papers that have already been published at major conferences are also welcome. Authors may also submit their work to future conferences or journals after acceptance to this workshop.
+							</p>
+							<p>
+								Submit to the Non-Archival Track via: <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/gDT-IV_Non-Archival" target="_blank">OpenReview</a>
+							</p>
+						</li>
+					</ol>
+	
+					<h5 style="font-weight: bold">Important Dates</h5>
+					<ul>
+						<li style="display: list-item">
+							<s>Archival Submission Deadline: 27 June 2025</s>
+						</li>
+						<li style="display: list-item">
+							<s>Archival Author Notifications: 10 July 2025</s>
+						</li>
+						<li style="display: list-item">
+							<s>Archival Camera-Ready: 13 August 2025</s>
+						</li>
+						<br>
+						<li style="display: list-item">
+							<s>Non-Archival Submission Deadline: 19 August 2025</s>
+						</li>
+						<li style="display: list-item">
+							<s>Non-Archival Author Notifications: 14 September 2025</s>
+						</li>
+						<li style="display: list-item">
+							<s>Non-Archival Camera-Ready: 28 September 2025</s>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="half-rule"/>
+	<section id="organizers">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+		<span class=titlesec>Organizers</span><br>
+		<div class="row">
+			<a href="https://www.linkedin.com/in/melnik" target="_blank">
+				<div class="profpic xlarge-1 columns">
+					<img  src=./images/organizers/Andrew.jpg class="figure-img img-fluid ">
+					<p class=profname><a href="https://www.linkedin.com/in/andrewmelnik" target="_blank">Andrew Melnik</a> </p>
+					<p class=institution> University of Bremen </p>
+				</div>
+			</a>
+			<a href="https://chen-geng.com" target="_blank">
+				<div class="profpic xlarge-1 columns">
+					<img src=./images/organizers/ChenGeng.jpg class="figure-img img-fluid ">
+					<p class=profname><a href="https://chen-geng.com" target="_blank"> Chen Geng </a> </p>
+					<p class=institution> Stanford University </p>
+				</div>
+			</a>
+			<a href="https://terencecyj.github.io/" target="_blank">
+				<div class="profpic xlarge-1 columns">
+					<img src=./images/organizers/YujinChen.jpg class="figure-img img-fluid ">
+					<p class=profname><a href="https://terencecyj.github.io/" target="_blank"> Yujin Chen </a> </p>
+					<p class=institution> Technical University of Munich </p>
+				</div>
+			</a>
+		</div>
+			    <div class="row">
+				    <a href="https://www.kelei.site/" target="_blank">
+					    <div class="profpic xlarge-1 columns">
+						    <img src=./images/organizers/LeiKe.jpg class="figure-img img-fluid ">
+						    <p class=profname><a href="https://www.kelei.site/" target="_blank"> Lei Ke </a> </p>
+						    <p class=institution> Tencent AI Seattle / Carnegie Mellon University </p>
+					    </div>
+				    </a>
+				    <a href="https://qiruiw.github.io/" target="_blank">
+					    <div class="profpic xlarge-1 columns">
+						    <img src=./images/organizers/QiruiWu.jpg class="figure-img img-fluid ">
+						    <p class=profname><a href="https://qiruiw.github.io/" target="_blank"> Qirui Wu </a> </p>
+						    <p class=institution> Simon Fraser University </p>
+					    </div>
+				    </a>
+				    <a href="https://sevenljy.github.io/" target="_blank">
+					    <div class="profpic xlarge-1 columns">
+						    <img src=./images/organizers/JiayiLiu.jpg class="figure-img img-fluid ">
+						    <p class=profname><a href="https://sevenljy.github.io/" target="_blank"> Jiayi Liu </a> </p>
+						    <p class=institution> Simon Fraser University </p>
+					    </div>
+				    </a>
+			    </div>
+		    </section>
+				
+	<hr class="half-rule"/>
+		<section id="contact">
+			<div class="container">
+			<div class="row">
+   <!-- <div display="inline"><img src="https://semrob.github.io/images/semrob_2024_logo.png" width="400px"></div> -->
+<!--    <div style="display:inline; width:520px; align-items: center; vertical-align: bottom; padding:20px 0 0 0;"> -->
+	   <div class="col-md-10 mx-auto">
+	   <span class="titlesec">Contact and Information</span><br>
+	   <span style="justify-content: left; text-align:left;">Please forward all questions to <a href="mailto:gdt-iv-pcs@googlegroups.com">gdt-iv-pcs@googlegroups.com</a>.</span>
+	<!-- <span style="justify-content: left; text-align:left;">Subscribe to our <a href="https://mailchi.mp/07f8ab4c1c65/semrob-workshop" target="_blank">mailing list</a> to stay updated on workshop news.</span> -->
+	    </div>
+		</div>
+		</div>
+	</section>
+				
+	<hr class="half-rule"/>
+	<section id="sponsors">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+		<span class=titlesec>Sponsors</span><br>
+				<img  src=images/sponsors/tencent.png style="width:640px;height:193px;">
+	    </div>
+		</div>
+		</div>
+	</section>
+				
+	<!-- Footer -->
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"> </script>
+	<!-- Custom JavaScript for this theme -->
+	<script src="js/scrolling-nav.js"></script>
+				
+<script>
+  $(window).on("scroll", function() {
+    var scrollTop = $(window).scrollTop();
+    $(".parallax-bg").css("transform", "translateY(" + scrollTop * 0.4 + "px)");
+  });
+</script>
+
+<script>
+// Load and display papers from CSV
+$(document).ready(function() {
+    // List of available PDFs based on the files in the directory
+    const availablePDFs = ['1', '2', '4', '5', '7', '8', '9', '10', '13', '15', '18', 'A4', 'A6', 'A7'];
+    
+    // Parse CSV function
+    function parseCSV(text) {
+        const lines = text.trim().split('\n');
+        const headers = lines[0].split(',').map(h => h.trim());
+        const papers = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+            const values = [];
+            let currentValue = '';
+            let insideQuotes = false;
+            
+            for (let j = 0; j < lines[i].length; j++) {
+                const char = lines[i][j];
+                
+                if (char === '"') {
+                    insideQuotes = !insideQuotes;
+                } else if (char === ',' && !insideQuotes) {
+                    values.push(currentValue.trim());
+                    currentValue = '';
+                } else {
+                    currentValue += char;
+                }
+            }
+            values.push(currentValue.trim());
+            
+            const paper = {};
+            headers.forEach((header, index) => {
+                paper[header] = values[index] || '';
+            });
+            papers.push(paper);
+        }
+        
+        return papers;
+    }
+    
+    // Generate HTML for a single paper
+    function generatePaperHTML(paper) {
+        const paperId = paper['Paper ID'];
+        const posterId = paper['Poster ID'];
+        const title = paper['Title'];
+        const authors = paper['Authors'];
+        const track = paper['Track'];
+        const decision = paper['Decision'];
+        const abstract = paper['Abstract'];
+        
+        // Determine if paper is spotlight
+        const isSpotlight = decision.includes('Spotlight');
+        
+        // Check if PDF is available
+        const hasPDF = availablePDFs.includes(paperId);
+        
+        // Generate spotlight ribbon if applicable
+        const spotlightRibbon = isSpotlight 
+            ? '<i class="fa fa-certificate" aria-hidden="true" style="color: #f0ad4e; margin-left: 8px;" title="Spotlight"></i>' 
+            : '';
+        
+        // Generate PDF link if available
+        const pdfLink = hasPDF 
+            ? '<a href="static/ICCV25/PDF/' + paperId + '.pdf" target="_blank" style="margin-left: 8px;"><i class="fa fa-file-pdf-o" aria-hidden="true" style="color: #d9534f;"></i></a>' 
+            : '';
+        
+        // Determine badge classes
+        const trackBadgeClass = track === 'Archival' ? 'badge-primary' : 'badge-secondary';
+        const decisionBadgeClass = isSpotlight ? 'badge-warning' : 'badge-info';
+        const decisionText = isSpotlight ? 'Spotlight' : 'Poster';
+        
+        const html = `
+            <div style="margin-bottom: 25px;">
+                <h5 style="font-weight: bold; display: inline;">
+                    ${title}
+                </h5>
+                ${spotlightRibbon}
+                ${pdfLink}
+                <br>
+                <span style="font-style: italic;">${authors}</span>
+                <br>
+                <span class="badge ${trackBadgeClass}">${track}</span>
+                <span class="badge ${decisionBadgeClass}">${decisionText}</span>
+                <span class="badge badge-light">Poster #${posterId}</span>
+                <span class="badge badge-light"><i class="fa fa-map-marker" aria-hidden="true"></i> ExHall II</span>
+                <br>
+                <a data-toggle="collapse" data-target="#abstract-${paperId}" class="collapsed abstract" aria-expanded="false" style="cursor: pointer;"> Abstract </a>
+                <div id="abstract-${paperId}" class="collapse" style="margin-top: 10px;">
+                    ${abstract}
+                </div>
+            </div>
+        `;
+        
+        return html;
+    }
+    
+    // Load CSV file
+    $.ajax({
+        url: 'static/ICCV25/meta.csv',
+        dataType: 'text',
+        success: function(data) {
+            const papers = parseCSV(data);
+            const container = $('#papers-container');
+            container.empty();
+            
+            papers.forEach(function(paper) {
+                container.append(generatePaperHTML(paper));
+            });
+        },
+        error: function(xhr, status, error) {
+            $('#papers-container').html('<p style="text-align: center; color: #d9534f;">Error loading papers. Please refresh the page.</p>');
+            console.error('Error loading CSV:', error);
+        }
+    });
+});
+</script>
+				
+	</body>
+</html>

@@ -1,3 +1,3 @@
 - [Digital Twin Generation from Visual Data: A Survey](https://github.com/ndrwmlnk/awesome-digital-twins)
-- [ICRA 2026 Workshop on Generative Digital Twins for Sim2Real and Real2Sim Transfer in Robotics](https://awesomedigitaltwin.github.io/2026_ICRA.html)
+- [ICRA 2026 Workshop on Generative Digital Twins for Real2Sim and Sim2Real Transfer in Robotics](https://awesomedigitaltwin.github.io/2026_ICRA.html)
 - [ICCV 2025 Workshop on Generating Digital Twins from Images and Videos](https://awesomedigitaltwin.github.io/2025_ICCV.html)

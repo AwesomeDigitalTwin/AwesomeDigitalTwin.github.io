@@ -1,44 +1,33 @@
+<!-- Source template: Conference workshop page by Andrew Melnik — https://awesomedigitaltwin.github.io/2026_ICRA.html -->
+<!-- Licensed under the MIT license -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>ICRA - Generative Digital Twins - Workshop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>ICRA - Digital Twins - Workshop</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+<!--        <link rel="stylesheet" href="./css/scrolling-nav.css">-->
+<!--        <link rel="author stylesheet" href="./css/style.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-
-    <link href="./css/scrolling-nav.css" rel="stylesheet">
-    <link href="./css/style.css" rel="author stylesheet">
-
     <style>
 
-        .pc-column {
-            width: 270px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .pc_list_item {
-            display: inline-block;
-            width: 200px;
+        body {
+            font-family: Montserrat; /*Montserrat; */
+            font-size: medium;
+            text-align: justify;
         }
 
         .parallax-header {
@@ -65,6 +54,146 @@
             position: relative;
             top: 20%; /* move the text higher */
             width: 100%;
+        }
+
+        .workshop-citation {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        .workshop-citation a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .workshop-citation a:hover {
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+
+        .figure-img {
+            border-radius: 50%;
+        }
+
+        .title-head {
+            font-size: 20px;
+            color: black;
+        }
+
+        @media (min-width: 992px) {
+            header {
+                padding: 156px 0 100px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .title-head {
+                display: None
+            }
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        section .container {
+            padding-bottom: 0px;
+        }
+
+        span.titlesec {
+            /*text-align: center;*/
+            font-weight: bold;
+            font-size: 2.0em;
+            display: block;
+        }
+
+        hr {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .profpic {
+            /*min-width: 14%;*/
+            margin: auto;
+            padding-bottom: 10px;
+            width: 190px;
+
+        }
+
+        .profpic img {
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin: auto;
+            object-fit: cover;
+        }
+
+        .speaker img {
+            width: 170px;
+            height: 170px;
+            display: block;
+            margin: auto;
+        }
+
+        .profpic .profname {
+            text-align: center;
+            font-size: large;
+            height: 20px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: black;
+
+        }
+
+        .profpic .profname a {
+            color: black;
+        }
+
+        .profpic .institution {
+            text-align: center;
+            font-size: 15px;
+            height: 60px;
+            color: black;
+        }
+
+        /* Add the below transitions to allow a smooth color change similar to lyft */
+        .navbar {
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            -ms-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            z-index: 5;
+        }
+
+        .title {
+            font-size: 2.7em;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+        }
+
+        .titlebox {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .titlebox {
+                padding: 0px;
+            }
+
+            .title {
+                font-size: 3em;
+            }
+
+        }
+
+        li {
+            display: list-item
         }
 
     </style>
@@ -185,7 +314,8 @@
                     <tr>
                         <td style="width: 7%"><b> 9:00 </b></td>
                         <td style="width: 20%">
-                            <img class="figure-img img-fluid" src=https://goldberg.berkeley.edu/Headshot-KG-Ambi-150dpi-sm.jpg>
+                            <img class="figure-img img-fluid"
+                                 src=https://goldberg.berkeley.edu/Headshot-KG-Ambi-150dpi-sm.jpg>
                         </td>
                         <td>
                             <b>Keynote: <a href="https://goldberg.berkeley.edu" target="_blank">Ken Goldberg</a></b><br>
@@ -212,7 +342,8 @@
                     <tr>
                         <td style="width: 7%"><b> 11:00 </b></td>
                         <td style="width: 20%">
-                            <img class="figure-img img-fluid" src=https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/corl/_jcr_content/root/responsivegrid/nv_container_804997743/nv_container_copy_18/nv_container_1679568822/nv_image_copy.coreimg.100.850.jpeg/1764613437034/yuke-zhu-featured-800x800.jpeg>
+                            <img class="figure-img img-fluid"
+                                 src=https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/corl/_jcr_content/root/responsivegrid/nv_container_804997743/nv_container_copy_18/nv_container_1679568822/nv_image_copy.coreimg.100.850.jpeg/1764613437034/yuke-zhu-featured-800x800.jpeg>
                         </td>
                         <td>
                             <b>Keynote: <a href="https://yukezhu.me" target="_blank">Yuke Zhu</a></b><br>
@@ -251,7 +382,8 @@
                     <tr>
                         <td style="width: 7%"><b> 13:30 </b></td>
                         <td style="width: 20%">
-                            <img class="figure-img img-fluid" src=https://www.oiermees.com/authors/admin/avatar_huf77bb6f3481ea674f51f312221d30a5e_499601_270x270_fill_q75_lanczos_center.jpg>
+                            <img class="figure-img img-fluid"
+                                 src=https://www.oiermees.com/authors/admin/avatar_huf77bb6f3481ea674f51f312221d30a5e_499601_270x270_fill_q75_lanczos_center.jpg>
                         </td>
                         <td>
                             <b>Keynote: <a href="https://www.oiermees.com" target="_blank">Oier Mees</a></b><br>
@@ -268,7 +400,8 @@
                     <tr>
                         <td style="width: 7%"><b> 14:00 </b></td>
                         <td style="width: 20%">
-                            <img class="figure-img img-fluid" src=https://eng.ox.ac.uk/media/1170/ingmar-posner-provided.jpg?width=250&height=250&v=1d9e229a3196fb0>
+                            <img class="figure-img img-fluid"
+                                 src=https://eng.ox.ac.uk/media/1170/ingmar-posner-provided.jpg?width=250&height=250&v=1d9e229a3196fb0>
                         </td>
                         <td>
                             <b>Keynote: <a href="https://eng.ox.ac.uk/people/ingmar-posner/" target="_blank">Ingmar
@@ -310,7 +443,8 @@
                     <tr>
                         <td style="width: 7%"><b> 15:30 </b></td>
                         <td style="width: 20%">
-                            <img class="figure-img img-fluid" src=https://i.cs.hku.hk/~hszhao/picture/hengshuangzhao.png>
+                            <img class="figure-img img-fluid"
+                                 src=https://i.cs.hku.hk/~hszhao/picture/hengshuangzhao.png>
                         </td>
                         <td>
                             <b>Keynote: <a href="https://i.cs.hku.hk/~hszhao/" target="_blank">Hengshuang
@@ -482,18 +616,18 @@
                         <p class="institution">University of Bremen</p>
                     </a>
 
-					<a href="https://albilo17.github.io/"
-					   target="_blank"
-					   rel="noopener noreferrer"
-					   class="profpic xlarge-1 columns">
-						<img src="https://albilo17.github.io/assets/img/alberta.jpg"
-							 class="figure-img img-fluid"
-							 alt="Alberta Longhini">
-						<p class="profname">Alberta Longhini</p>
-						<p class="institution">KTH</p>
-					</a>
+                    <a href="https://albilo17.github.io/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="https://albilo17.github.io/assets/img/alberta.jpg"
+                             class="figure-img img-fluid"
+                             alt="Alberta Longhini">
+                        <p class="profname">Alberta Longhini</p>
+                        <p class="institution">KTH</p>
+                    </a>
 
-					<a href="https://jonfranc.com"
+                    <a href="https://jonfranc.com"
                        target="_blank"
                        rel="noopener noreferrer"
                        class="profpic xlarge-1 columns">
@@ -507,18 +641,18 @@
                 </div>
 
                 <div class="row">
-					<a href="https://uksangyoo.github.io"
-					   target="_blank"
-					   rel="noopener noreferrer"
-					   class="profpic xlarge-1 columns">
-						<img src="https://uksangyoo.github.io/assets/img/prof_pic.jpg"
-							 class="figure-img img-fluid"
-							 alt="Uksang Yoo">
-						<p class="profname">Uksang Yoo</p>
-						<p class="institution">Carnegie Mellon University</p>
-					</a>
+                    <a href="https://uksangyoo.github.io"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="https://uksangyoo.github.io/assets/img/prof_pic.jpg"
+                             class="figure-img img-fluid"
+                             alt="Uksang Yoo">
+                        <p class="profname">Uksang Yoo</p>
+                        <p class="institution">Carnegie Mellon University</p>
+                    </a>
 
-					<a href="https://ariannaliu.github.io"
+                    <a href="https://ariannaliu.github.io"
                        target="_blank"
                        rel="noopener noreferrer"
                        class="profpic xlarge-1 columns">
@@ -538,19 +672,19 @@
                              alt="Maggie Bai Wang">
                         <p class="profname">Maggie Bai Wang</p>
                         <p class="institution">Stanford</p>
-					</a>
+                    </a>
 
-					<a href="https://ai.uni-bremen.de/team/mehreen_naeem"
-					   target="_blank"
-					   rel="noopener noreferrer"
-					   class="profpic xlarge-1 columns">
-						<img src="https://ai.uni-bremen.de/_media/wiki/mehreen.jpg"
-							 class="figure-img img-fluid"
-							 alt="Mehreen Naeem">
-						<p class="profname">Mehreen Naeem</p>
-						<p class="institution">Bremen University</p>
-					</a>
-				</div>
+                    <a href="https://ai.uni-bremen.de/team/mehreen_naeem"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="profpic xlarge-1 columns">
+                        <img src="https://ai.uni-bremen.de/_media/wiki/mehreen.jpg"
+                             class="figure-img img-fluid"
+                             alt="Mehreen Naeem">
+                        <p class="profname">Mehreen Naeem</p>
+                        <p class="institution">Bremen University</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -562,7 +696,8 @@
         <div class="row">
             <div class="col-md-10 mx-auto">
                 <span class="titlesec">Contact and Information</span><br>
-                <span style="justify-content: left; text-align:left;">Please forward all questions to <a href="mailto:gdt-iv-pcs@googlegroups.com">gdt-iv-pcs@googlegroups.com</a></span>
+                <span style="justify-content: left; text-align:left;">Please forward all questions to <a
+                        href="mailto:gdt-iv-pcs@googlegroups.com">gdt-iv-pcs@googlegroups.com</a></span>
             </div>
         </div>
     </div>
@@ -579,6 +714,13 @@
         </div>
     </div>
 </section>
+
+<!-- Licensed under the MIT license -->
+<div class="workshop-citation">
+    <a href="https://awesomedigitaltwin.github.io/2026_ICRA.html" target="_blank" rel="noopener">
+        Source template: Conference workshop page by Andrew Melnik — awesomedigitaltwin.github.io
+    </a>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>

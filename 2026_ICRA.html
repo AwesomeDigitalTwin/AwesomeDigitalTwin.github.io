@@ -264,7 +264,7 @@
     <div class="container bar-container">
         <a class="title-head" href="https://2026.ieee-icra.org/workshops-and-tutorials/" target="_blank">ICRA 2026 All Workshops</a>
         <div class="ml-auto d-flex align-items-center">
-            <a class="nav-link js-scroll-trigger d-lg-none" href="#schedule" style="padding-right: 15px; font-weight: 600; color: rgba(0,0,0,.5);">Schedule</a>
+            <a class="nav-link js-scroll-trigger d-lg-none" href="#schedule" style="padding-right: 15px; font-weight: 600; color: rgba(0,0,0,.5);">Schedule & Speakers</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -313,11 +313,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <div class="about-header d-flex align-items-center" data-toggle="collapse" data-target="#aboutContent" aria-expanded="false" aria-controls="aboutContent">
+                <div class="about-header d-flex align-items-center" style="cursor: pointer;">
                     <span class="titlesec">About</span>
                     <span class="chevron d-md-none">▼</span>
                 </div>
-                <div id="aboutContent" class="about-content collapse-mobile">
+                <div id="aboutContent" class="about-content">
                     <span class="about-preview">
                         <br>
                         This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between reality and simulation (Real2Sim) and simulation and reality (Sim2Real) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments - offer a powerful approach to bridging these divides.
@@ -340,7 +340,7 @@
     <div class="container" id="schedule">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <span class="titlesec">Schedule</span>
+                <span class="titlesec">Schedule & Speakers</span>
                 June 1st, 2026 - Vienna, Austria
                 <table class="table table-striped">
                     <thead>
@@ -836,9 +836,11 @@
         $('.about-header').on('click', function() {
             if ($(window).width() <= 480) {
                 $('#aboutContentInner').collapse('toggle');
-                // Toggle aria-expanded manually if needed, though Bootstrap usually handles it
-                var expanded = $(this).attr('aria-expanded') === 'true';
-                $(this).attr('aria-expanded', !expanded);
+                var $header = $(this);
+                // We use a timeout to let Bootstrap update the collapse state first if possible, 
+                // or just toggle it here since we removed data-toggle
+                var isExpanded = $header.attr('aria-expanded') === 'true';
+                $header.attr('aria-expanded', !isExpanded);
             }
         });
         
@@ -846,6 +848,7 @@
         $(window).resize(function() {
             if ($(window).width() > 480) {
                 $('#aboutContentInner').addClass('show');
+                $('.about-header').attr('aria-expanded', 'true');
             }
         });
     });

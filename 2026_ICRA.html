@@ -200,6 +200,54 @@
             .subtitle {
                 font-size: 1.0em;
             }
+
+            /* About section mobile expansion styles */
+            .about-header {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .about-header .chevron {
+                transition: transform 0.3s ease;
+                font-size: 0.6em;
+                margin-left: 10px;
+            }
+
+            .about-header[aria-expanded="true"] .chevron {
+                transform: rotate(180deg);
+            }
+
+            .about-preview {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .about-header[aria-expanded="true"] + .about-content .about-preview {
+                display: block; /* Remove line clamp when expanded */
+                overflow: visible;
+            }
+
+            /* Ensure full content shows when expanded */
+            .collapse.show .about-full-text {
+                display: block;
+            }
+        }
+
+        /* Desktop defaults to ensure no clamping or hiding */
+        @media (min-width: 481px) {
+            .about-preview {
+                display: block !important;
+            }
+            .about-full-text {
+                display: block !important;
+            }
+            .chevron {
+                display: none !important;
+            }
         }
 
         li {
@@ -215,10 +263,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
     <div class="container bar-container">
         <a class="title-head" href="https://2026.ieee-icra.org/workshops-and-tutorials/" target="_blank">ICRA 2026 All Workshops</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="ml-auto d-flex align-items-center">
+            <a class="nav-link js-scroll-trigger d-lg-none" href="#schedule" style="padding-right: 15px; font-weight: 600; color: rgba(0,0,0,.5);">Schedule</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <!-- 				<li class="nav-item">
@@ -262,14 +313,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <span class=titlesec>About</span>
-                <span>
-                    <br>
-                    This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between reality and simulation (Real2Sim) and simulation and reality (Sim2Real) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments - offer a powerful approach to bridging these divides.
-                    <br><br>
-                    We will focus on generative digital twins, where AI-driven models automatically construct, update, and diversify twins to enhance robustness, adaptability, and scalability. Topics will include: (i) pipelines for digital twin generation (Real2Sim); (ii) benchmarks and case studies for Sim2Real transfer; (iii) learning algorithms leveraging adaptive twins; and (iv) applications across industrial, household, and mobile robotics. The workshop will bring together leading researchers from robotics, machine learning, and computer graphics, fostering interdisciplinary exchange through invited talks, poster sessions, and panel discussions. By highlighting recent advances and charting future directions, this event aims to define a roadmap for how generative digital twins can enable more reliable and generalizable robotic intelligence: <a href="https://arxiv.org/abs/2504.13159" target="_blank">Digital Twin Generation from Visual Data: A Survey</a>
-                    <br><br>
-                </span>
+                <div class="about-header d-flex align-items-center" data-toggle="collapse" data-target="#aboutContent" aria-expanded="false" aria-controls="aboutContent">
+                    <span class="titlesec">About</span>
+                    <span class="chevron d-md-none">▼</span>
+                </div>
+                <div id="aboutContent" class="about-content collapse-mobile">
+                    <span class="about-preview">
+                        <br>
+                        This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between reality and simulation (Real2Sim) and simulation and reality (Sim2Real) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments - offer a powerful approach to bridging these divides.
+                    </span>
+                    <div id="aboutContentInner" class="collapse about-full-text">
+                        <span>
+                            <br>
+                            We will focus on generative digital twins, where AI-driven models automatically construct, update, and diversify twins to enhance robustness, adaptability, and scalability. Topics will include: (i) pipelines for digital twin generation (Real2Sim); (ii) benchmarks and case studies for Sim2Real transfer; (iii) learning algorithms leveraging adaptive twins; and (iv) applications across industrial, household, and mobile robotics. The workshop will bring together leading researchers from robotics, machine learning, and computer graphics, fostering interdisciplinary exchange through invited talks, poster sessions, and panel discussions. By highlighting recent advances and charting future directions, this event aims to define a roadmap for how generative digital twins can enable more reliable and generalizable robotic intelligence: <a href="https://arxiv.org/abs/2504.13159" target="_blank">Digital Twin Generation from Visual Data: A Survey</a>
+                            <br><br>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -769,6 +829,26 @@
 
     // Initialize countdown for submission deadline (Anywhere on Earth)
     updateCountdown("countdown-nonarchival-submission", "2026-03-22");
+</script>
+<script>
+    $(document).ready(function(){
+        // Handle the mobile collapse behavior for the About section
+        $('.about-header').on('click', function() {
+            if ($(window).width() <= 480) {
+                $('#aboutContentInner').collapse('toggle');
+                // Toggle aria-expanded manually if needed, though Bootstrap usually handles it
+                var expanded = $(this).attr('aria-expanded') === 'true';
+                $(this).attr('aria-expanded', !expanded);
+            }
+        });
+        
+        // Ensure that on resize to desktop, everything is visible
+        $(window).resize(function() {
+            if ($(window).width() > 480) {
+                $('#aboutContentInner').addClass('show');
+            }
+        });
+    });
 </script>
 </body>
 </html>

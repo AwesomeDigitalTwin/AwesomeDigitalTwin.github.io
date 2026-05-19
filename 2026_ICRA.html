@@ -1,4 +1,4 @@
-<!-- Source template: Conference workshop page by Andrew Melnik — https://awesomedigitaltwin.github.io/2026_ICRA.html -->
+<!-- Source template: https://awesomedigitaltwin.github.io -->
 <!-- Licensed under the MIT license -->
 <!DOCTYPE html>
 <html lang="en">
@@ -73,21 +73,30 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <div class="about-header d-flex align-items-center">
-                    <span class="titlesec">About</span>
-                    <span class="chevron d-md-none">▼</span>
-                </div>
-                <div id="aboutContent" class="about-content">
-                    <span class="about-preview">
-                        <br>
-                        This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between reality and simulation (Real2Sim) and simulation and reality (Sim2Real) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments - offer a powerful approach to bridging these divides.
-                    </span>
-                    <div id="aboutContentInner" class="collapse about-full-text">
-                        <span>
-                            <br>
-                            We will focus on generative digital twins, where AI-driven models automatically construct, update, and diversify twins to enhance robustness, adaptability, and scalability. Topics will include: (i) pipelines for digital twin generation (Real2Sim); (ii) benchmarks and case studies for Sim2Real transfer; (iii) learning algorithms leveraging adaptive twins; and (iv) applications across industrial, household, and mobile robotics. The workshop will bring together leading researchers from robotics, machine learning, and computer graphics, fostering interdisciplinary exchange through invited talks, poster sessions, and panel discussions. By highlighting recent advances and charting future directions, this event aims to define a roadmap for how generative digital twins can enable more reliable and generalizable robotic intelligence: <a href="https://arxiv.org/abs/2504.13159" target="_blank" rel="noopener noreferrer">Digital Twin Generation from Visual Data: A Survey</a>
-                            <br><br>
+                <div class="collapsible-section collapsible-section-mobile-only">
+                    <button type="button" class="collapsible-header collapsed" data-toggle="collapse"
+                            data-target="#about-more" aria-expanded="false"
+                            aria-controls="about-more">
+                        <span class="titlesec">About</span>
+                        <span class="collapsible-control">
+                            <span class="collapsible-chevron" aria-hidden="true">▼</span>
+                            <span class="collapsible-state-expand">(click to expand)</span>
+                            <span class="collapsible-state-collapse">(click to collapse)</span>
                         </span>
+                    </button>
+                    <div class="collapsible-content">
+                        <p class="collapsible-preview">
+                        This workshop will explore generative digital twin technologies as a pathway to overcoming the persistent gaps between reality and simulation (Real2Sim) and simulation and reality (Sim2Real) in robotics. Despite advances in transfer learning and physics-based simulation, robot policies often underperform when deployed in the real world due to unmodeled dynamics, sensory mismatches, and environmental complexity. Digital twins - high-fidelity, adaptive virtual representations of robots and environments - offer a powerful approach to bridging these divides.
+                        </p>
+                        <button type="button" class="collapsible-expand-prompt" data-toggle="collapse"
+                                data-target="#about-more" aria-expanded="false"
+                                aria-controls="about-more">(click to expand)</button>
+
+                        <div id="about-more" class="collapse">
+                            <p>
+                            We will focus on generative digital twins, where AI-driven models automatically construct, update, and diversify twins to enhance robustness, adaptability, and scalability. Topics will include: (i) pipelines for digital twin generation (Real2Sim); (ii) benchmarks and case studies for Sim2Real transfer; (iii) learning algorithms leveraging adaptive twins; and (iv) applications across industrial, household, and mobile robotics. The workshop will bring together leading researchers from robotics, machine learning, and computer graphics, fostering interdisciplinary exchange through invited talks, poster sessions, and panel discussions. By highlighting recent advances and charting future directions, this event aims to define a roadmap for how generative digital twins can enable more reliable and generalizable robotic intelligence: <a href="https://arxiv.org/abs/2504.13159" target="_blank" rel="noopener noreferrer">Digital Twin Generation from Visual Data: A Survey</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -131,10 +140,10 @@
                             <b>Keynote: <a href="https://i.cs.hku.hk/~hszhao/" target="_blank" rel="noopener noreferrer">Hengshuang Zhao</a></b><br>
                             <i> The University of Hong Kong </i><br><br>
                             <b> Title: </b>World Model Driven Embodied Intelligence<br>
-                            <a data-toggle="collapse" data-target="#abstract-8" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-8" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-8" aria-expanded="false"
+                                    aria-controls="abstract-8">Abstract (click to expand)</button>
+                            <div id="abstract-8" class="news collapse abstract-body">
                                 World model driven embodied intelligence aims to build general agents that use an internal simulator to understand physical laws, predict environmental changes, and execute long horizon complex tasks, providing a pathway to next generation autonomous robots. Guided by the thread “Build-Perceive-Create”, we first analyze the limitations of current world models and propose an egocentric framework for real time immersive interaction in virtual environments. We then develop a physics aware video generation pipeline, showing that conventional approaches often produce outputs inconsistent with physical laws; we address this by injecting physics into representations and sampling through reinforcement learning and generative feedback. To overcome bottlenecks in embodied creation—short horizons, weak instruction following, and limited linguistic diversity, we use sparse point flows to simplify cross modal alignment and improve manipulation precision, while introducing intermediate rewards from a referee LLM to sustain long horizon learning. For deployment, we bridge the sim-to-real gap with geometry-centric perception and hybrid control. Looking ahead, we outline a self-evolving closed loop where world models generate the demanded embodied training data including corner cases, and deficient behavior of embodied agents feeds back the insufficient type of data, yielding systems that transition seamlessly from virtual to the physical world.
                             </div>
                         </td>
@@ -149,10 +158,10 @@
                             <b>Keynote: <a href="https://www.linkedin.com/in/stevexiecbs/" target="_blank" rel="noopener noreferrer">Steve Xie</a></b><br>
                             <i> Founder & CEO of <a href="https://lightwheel.ai" target="_blank" rel="noopener noreferrer">Lightwheel</a></i><br><br>
                             <b> Title: </b>Accelerate Physical AI with Simulation-Centric Data Engine<br>
-                            <a data-toggle="collapse" data-target="#abstract-2" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-2" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-2" aria-expanded="false"
+                                    aria-controls="abstract-2">Abstract (click to expand)</button>
+                            <div id="abstract-2" class="news collapse abstract-body">
                                 Physical AI demands orders of magnitude more data than language models, yet real-world data collection alone cannot scale to meet that need. Lightwheel has built and operates a simulation-centric data engine at scale, delivering physically accurate world generation, robot-agnostic behavior data, and rigorous model evaluation. Grounded in real deployment experience serving frontier robotics teams globally, this session offers a practitioner's view on how simulation infrastructure accelerates the development of humanoids and physical AI.
                             </div>
                         </td>
@@ -171,9 +180,10 @@
                             <b>Keynote: <a href="https://jiajunwu.com" target="_blank" rel="noopener noreferrer">Jiajun Wu</a></b><br>
                             <i> Stanford </i><br><br>
                             <b> Title: </b> Physical Grounding of Generative Digital Twins for Robotics <br>
-                            <a data-toggle="collapse" data-target="#abstract-4" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-4" class="news collapse abstract-body" aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-4" aria-expanded="false"
+                                    aria-controls="abstract-4">Abstract (click to expand)</button>
+                            <div id="abstract-4" class="news collapse abstract-body">
                                 Much of our visual world has its intrinsic, physical structure: scenes are made of objects; objects have their geometry, texture, material, and physical properties. With the rapid development of neural visual generative models, what role does such structural information play, or do we still need it at all?  In this talk, I will discuss our recent efforts to build generative digital twins that are not only visually realistic, but also physically grounded. Beyond reconstruction and generation, I will also demonstrate how these objects can bridge the sim-to-real gap for robotic manipulation.
                             </div>
                         </td>
@@ -187,10 +197,10 @@
                             <b>Keynote: <a href="https://ai.stanford.edu/~amandlek/" target="_blank" rel="noopener noreferrer">Ajay Mandlekar</a></b><br>
                             <i> NVIDIA </i><br><br>
                             <b> Title: </b>Removing the Barriers to Simulation Adoption with Automated Environment Construction and Synthetic Data Generation<br>
-                            <a data-toggle="collapse" data-target="#abstract-3" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-3" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-3" aria-expanded="false"
+                                    aria-controls="abstract-3">Abstract (click to expand)</button>
+                            <div id="abstract-3" class="news collapse abstract-body">
                                 Real-world robot training and evaluation are costly, labor-intensive, and difficult to scale. While simulation offers a powerful alternative, it is often hindered by high engineering overhead and the persistent sim-to-real gap. This talk explores how to dismantle these barriers. I will introduce a system that automatically generates digital twins and "cousins" from real-world videos, streamlining both policy training (real-to-sim-to-real) and evaluation (real-to-sim). Finally, I will discuss scaling policy training with simulation to complex, non-traditional domains, including deformable object manipulation and humanoid loco-manipulation.
                             </div>
                         </td>
@@ -214,10 +224,10 @@
                             <b>Keynote: <a href="https://msavva.github.io" target="_blank" rel="noopener noreferrer">Manolis Savva</a></b><br>
                             <i> SFU </i><br><br>
                             <b> Title: </b> Digital Twins for Embodied AI: Advancing the Frontier of Realism and Interaction <br>
-                            <a data-toggle="collapse" data-target="#abstract-1" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-1" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-1" aria-expanded="false"
+                                    aria-controls="abstract-1">Abstract (click to expand)</button>
+                            <div id="abstract-1" class="news collapse abstract-body">
                                 blank
                             </div>
                         </td>
@@ -233,10 +243,10 @@
                                 Posner</a></b><br>
                             <i> Oxford </i><br><br>
                             <b> Title: </b> blank <br>
-                            <a data-toggle="collapse" data-target="#abstract-6" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-6" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-6" aria-expanded="false"
+                                    aria-controls="abstract-6">Abstract (click to expand)</button>
+                            <div id="abstract-6" class="news collapse abstract-body">
                                 blank
                             </div>
                         </td>
@@ -251,9 +261,10 @@
                             <b>Keynote: <a href="https://goldberg.berkeley.edu" target="_blank" rel="noopener noreferrer">Ken Goldberg</a></b><br>
                             <i> UC Berkeley </i><br><br>
                             <b> Title: </b>Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or Robot Hardware<br>
-                            <a data-toggle="collapse" data-target="#abstract-7" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-7" class="news collapse abstract-body" aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-7" aria-expanded="false"
+                                    aria-controls="abstract-7">Abstract (click to expand)</button>
+                            <div id="abstract-7" class="news collapse abstract-body">
                                 Scaling robot learning requires vast and diverse datasets. Yet the prevailing data collection paradigm—human teleoperation—remains costly and constrained by manual effort and physical robot access. We introduce Real2Render2Real (R2R2R), a novel approach for generating robot training data without relying on object dynamics simulation or teleoperation of robot hardware. The input is a smartphone-captured scan of one or more objects and a single video of a human demonstration. In contrast to simulation, R2R2R renders thousands of high visual fidelity robot-agnostic demonstrations by reconstructing detailed 3D object geometry and appearance, and tracking 6-DoF object motion. R2R2R uses 3D Gaussian Splatting (3DGS) to enable flexible asset generation and trajectory synthesis for both rigid and articulated objects, converting these representations to meshes to maintain compatibility with scalable rendering engines like IsaacLab but with collision modeling off. Robot demonstration data generated by R2R2R integrates directly with models that operate on robot proprioceptive states and image observations, such as vision-language-action models (VLA) and imitation learning policies. Over 1000 physical experiments suggest that models trained on R2R2R data from a single human demonstration can match the performance of models trained on 150 human teleoperation demonstrations. (Joint work with Justin Yu, Letian Fu, Huang Huang, Karim El-Refai, Rares Andrei Ambrus, Richard Cheng, and Muhammad Zubair Irshad.)
                             </div>
                         </td>
@@ -273,10 +284,10 @@
                             <b>Keynote: <a href="https://www.oiermees.com" target="_blank" rel="noopener noreferrer">Oier Mees</a></b><br>
                             <i> Microsoft </i><br><br>
                             <b> Title: </b> blank <br>
-                            <a data-toggle="collapse" data-target="#abstract-5" class="collapsed abstract"
-                               aria-expanded="false"> Abstract </a>
-                            <div id="abstract-5" class="news collapse abstract-body"
-                                 aria-expanded="false">
+                            <button type="button" class="abstract-toggle collapsed" data-toggle="collapse"
+                                    data-target="#abstract-5" aria-expanded="false"
+                                    aria-controls="abstract-5">Abstract (click to expand)</button>
+                            <div id="abstract-5" class="news collapse abstract-body">
                                 blank
                             </div>
                         </td>
@@ -578,7 +589,7 @@
 <!-- Licensed under the MIT license -->
 <div class="workshop-citation">
     <a href="https://awesomedigitaltwin.github.io/2026_ICRA.html" target="_blank" rel="noopener noreferrer">
-        Source template: Conference workshop page by Andrew Melnik — awesomedigitaltwin.github.io
+        Source template: https://awesomedigitaltwin.github.io
     </a>
 </div>
 

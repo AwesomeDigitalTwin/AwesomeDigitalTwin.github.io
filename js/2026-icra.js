@@ -50,12 +50,30 @@
             var $section = $(this);
             var $collapse = $section.find(".collapse").first();
             var $toggles = $section.find(".collapsible-header, .collapsible-expand-prompt");
+            var isMobileOnly = $section.hasClass("collapsible-section-mobile-only");
+
+            function isMobileView() {
+                return $(window).width() <= 480;
+            }
 
             function setSectionExpanded(isExpanded) {
                 $section.toggleClass("is-expanded", isExpanded);
                 $toggles.attr("aria-expanded", isExpanded ? "true" : "false");
                 $toggles.toggleClass("collapsed", !isExpanded);
             }
+
+            function syncSectionState() {
+                setSectionExpanded(isMobileOnly && !isMobileView() ? true : $collapse.hasClass("show"));
+            }
+
+            $toggles.on("click", function(event) {
+                if (isMobileOnly && !isMobileView()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    setSectionExpanded(true);
+                    return false;
+                }
+            });
 
             $collapse
                 .on("show.bs.collapse", function() {
@@ -65,31 +83,37 @@
                     setSectionExpanded(false);
                 });
 
-            setSectionExpanded($collapse.hasClass("show"));
+            syncSectionState();
+            $(window).on("resize", syncSectionState);
         });
     }
 
-    function initializeAboutCollapse() {
-        $(".about-header").on("click", function() {
-            if ($(window).width() <= 480) {
-                $("#aboutContentInner").collapse("toggle");
-                var $header = $(this);
-                var isExpanded = $header.attr("aria-expanded") === "true";
-                $header.attr("aria-expanded", !isExpanded);
-            }
-        });
+    function initializeAbstractToggles() {
+        $(".abstract-toggle").each(function() {
+            var $toggle = $(this);
+            var targetSelector = $toggle.attr("data-target");
+            var $collapse = $(targetSelector);
 
-        $(window).resize(function() {
-            if ($(window).width() > 480) {
-                $("#aboutContentInner").addClass("show");
-                $(".about-header").attr("aria-expanded", "true");
+            function setAbstractExpanded(isExpanded) {
+                $toggle.text(isExpanded ? "Abstract (click to collapse)" : "Abstract (click to expand)");
+                $toggle.attr("aria-expanded", isExpanded ? "true" : "false");
             }
+
+            $collapse
+                .on("show.bs.collapse", function() {
+                    setAbstractExpanded(true);
+                })
+                .on("hide.bs.collapse", function() {
+                    setAbstractExpanded(false);
+                });
+
+            setAbstractExpanded($collapse.hasClass("show"));
         });
     }
 
     $(document).ready(function() {
         updateCountdown("countdown-nonarchival-submission", "2026-03-22");
         initializeCollapsibleSections();
-        initializeAboutCollapse();
+        initializeAbstractToggles();
     });
 })(jQuery);

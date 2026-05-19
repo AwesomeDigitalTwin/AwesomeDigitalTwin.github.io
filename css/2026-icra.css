@@ -243,51 +243,33 @@ hr {
         font-size: 1em;
     }
 
-    .about-header {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .about-header .chevron {
-        transition: transform 0.3s ease;
-        font-size: 0.6em;
-        margin-left: 10px;
-    }
-
-    .about-header[aria-expanded="true"] .chevron {
-        transform: rotate(180deg);
-    }
-
-    .about-preview {
-        display: -webkit-box;
+    .collapsible-section-mobile-only .collapsible-preview {
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .about-header[aria-expanded="true"] + .about-content .about-preview {
-        display: block;
-        overflow: visible;
-    }
-
-    .collapse.show .about-full-text {
-        display: block;
     }
 }
 
 @media (min-width: 481px) {
-    .about-preview {
-        display: block !important;
+    .collapsible-section-mobile-only .collapsible-header {
+        cursor: default;
     }
 
-    .about-full-text {
-        display: block !important;
+    .collapsible-section-mobile-only .collapsible-control,
+    .collapsible-section-mobile-only .collapsible-expand-prompt {
+        display: none;
     }
 
-    .chevron {
-        display: none !important;
+    .collapsible-section-mobile-only .collapsible-preview {
+        display: block !important;
+        overflow: visible;
+    }
+
+    .collapsible-section-mobile-only .collapse {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .collapsible-section-mobile-only .collapsible-content {
+        margin-top: 0;
     }
 }
 
@@ -310,6 +292,30 @@ li {
 
 #schedule .news.collapse {
     text-align: justify;
+}
+
+.abstract-toggle {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #007bff;
+    font: inherit;
+    line-height: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.abstract-toggle:hover,
+.abstract-toggle:focus {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.abstract-toggle:focus {
+    outline: 2px solid #80bdff;
+    outline-offset: 2px;
 }
 
 .abstract-body {

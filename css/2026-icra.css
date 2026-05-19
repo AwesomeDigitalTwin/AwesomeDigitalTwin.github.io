@@ -310,6 +310,17 @@ li {
     text-align: left;
 }
 
+#schedule.schedule-compact {
+    --schedule-compact-media-width: 112px;
+    --schedule-compact-gap: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    #schedule.schedule-compact {
+        --schedule-compact-media-width: 160px;
+    }
+}
+
 #schedule.schedule-compact table,
 #schedule.schedule-compact tbody,
 #schedule.schedule-compact tbody tr,
@@ -331,19 +342,19 @@ li {
 #schedule.schedule-compact tbody tr {
     position: relative;
     min-height: 2.75rem;
-    padding: 0.75rem 0 0.75rem calc(24% + 0.75rem);
+    padding: 0.75rem 0 0.75rem calc(var(--schedule-compact-media-width) + var(--schedule-compact-gap));
 }
 
 #schedule.schedule-compact tbody td {
     border-top: 0;
+    padding: 0;
 }
 
 #schedule.schedule-compact .schedule-time-cell {
     position: absolute;
     top: 0.75rem;
     left: 0;
-    width: 24%;
-    padding-right: 0.75rem;
+    width: var(--schedule-compact-media-width);
     padding-bottom: 0;
 }
 
@@ -356,9 +367,8 @@ li {
     top: 2.75rem;
     left: 0;
     display: block;
-    width: 24%;
+    width: var(--schedule-compact-media-width);
     padding-top: 0;
-    padding-right: 0.75rem;
 }
 
 #schedule.schedule-compact .schedule-image-cell img {
@@ -368,7 +378,7 @@ li {
 }
 
 #schedule.schedule-compact .schedule-image-cell:not(:empty) + .schedule-info-cell {
-    min-height: 180px;
+    min-height: calc(var(--schedule-compact-media-width) + 2.75rem);
 }
 
 #schedule.schedule-compact .schedule-info-cell {

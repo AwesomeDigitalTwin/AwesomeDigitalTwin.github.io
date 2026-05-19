@@ -361,6 +361,12 @@ li {
     padding-right: 0.75rem;
 }
 
+#schedule.schedule-compact .schedule-image-cell img {
+    display: block;
+    width: 100%;
+    max-width: none;
+}
+
 #schedule.schedule-compact .schedule-image-cell:not(:empty) + .schedule-info-cell {
     min-height: 180px;
 }

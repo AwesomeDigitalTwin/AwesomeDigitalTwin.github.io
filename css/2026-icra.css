@@ -310,64 +310,64 @@ li {
     text-align: left;
 }
 
-@media only screen and (max-width: 1199.98px) {
-    #schedule table,
-    #schedule tbody,
-    #schedule tbody tr,
-    #schedule tbody td {
-        display: block;
-    }
+#schedule.schedule-compact table,
+#schedule.schedule-compact tbody,
+#schedule.schedule-compact tbody tr,
+#schedule.schedule-compact tbody td {
+    display: block;
+}
 
-    #schedule table,
-    #schedule tbody,
-    #schedule tbody tr {
-        width: 100%;
-    }
+#schedule.schedule-compact table,
+#schedule.schedule-compact tbody,
+#schedule.schedule-compact tbody tr {
+    width: 100%;
+}
 
-    #schedule colgroup,
-    #schedule thead {
-        display: none;
-    }
+#schedule.schedule-compact colgroup,
+#schedule.schedule-compact thead {
+    display: none;
+}
 
-    #schedule tbody tr {
-        padding: 0.75rem 0;
-    }
+#schedule.schedule-compact tbody tr {
+    position: relative;
+    min-height: 2.75rem;
+    padding: 0.75rem 0 0.75rem calc(24% + 0.75rem);
+}
 
-    #schedule tbody td {
-        border-top: 0;
-    }
+#schedule.schedule-compact tbody td {
+    border-top: 0;
+}
 
-    #schedule tbody tr::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+#schedule.schedule-compact .schedule-time-cell {
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    width: 24%;
+    padding-right: 0.75rem;
+    padding-bottom: 0;
+}
 
-    .schedule-time-cell {
-        float: left;
-        clear: left;
-        width: 24%;
-        padding-right: 0.75rem;
-        padding-bottom: 0;
-    }
+#schedule.schedule-compact .schedule-image-cell {
+    display: none;
+}
 
-    .schedule-image-cell {
-        float: left;
-        clear: left;
-        width: 24%;
-        padding-right: 0.75rem;
-        padding-top: 10px;
-    }
+#schedule.schedule-compact .schedule-image-cell:not(:empty) {
+    position: absolute;
+    top: 2.75rem;
+    left: 0;
+    display: block;
+    width: 24%;
+    padding-top: 0;
+    padding-right: 0.75rem;
+}
 
-    .schedule-image-cell:empty {
-        display: none;
-    }
+#schedule.schedule-compact .schedule-image-cell:not(:empty) + .schedule-info-cell {
+    min-height: 180px;
+}
 
-    .schedule-info-cell {
-        width: auto;
-        margin-left: 24%;
-        min-width: 0;
-    }
+#schedule.schedule-compact .schedule-info-cell {
+    width: 100%;
+    min-width: 0;
 }
 
 #schedule .news.collapse {

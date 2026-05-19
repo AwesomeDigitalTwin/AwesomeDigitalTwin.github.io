@@ -111,8 +111,22 @@
         });
     }
 
+    function initializeScheduleLayout() {
+        var $schedule = $("#schedule");
+        var $scheduleContent = $schedule.find(".col-md-10").first();
+
+        function updateScheduleLayout() {
+            var contentWidth = $scheduleContent.outerWidth() || $(window).width();
+            $schedule.toggleClass("schedule-compact", contentWidth < 900);
+        }
+
+        updateScheduleLayout();
+        $(window).on("resize orientationchange", updateScheduleLayout);
+    }
+
     $(document).ready(function() {
         updateCountdown("countdown-nonarchival-submission", "2026-03-22");
+        initializeScheduleLayout();
         initializeCollapsibleSections();
         initializeAbstractToggles();
     });

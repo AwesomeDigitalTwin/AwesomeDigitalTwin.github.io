@@ -318,30 +318,44 @@ li {
         display: block;
     }
 
+    #schedule table,
+    #schedule tbody,
+    #schedule tbody tr {
+        width: 100%;
+    }
+
     #schedule colgroup,
     #schedule thead {
         display: none;
     }
 
     #schedule tbody tr {
-        display: grid;
-        grid-template-columns: 24% minmax(0, 1fr);
-        grid-template-rows: auto auto;
+        padding: 0.75rem 0;
     }
 
     #schedule tbody td {
         border-top: 0;
     }
 
+    #schedule tbody tr::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
     .schedule-time-cell {
-        grid-column: 1;
-        grid-row: 1;
+        float: left;
+        clear: left;
+        width: 24%;
+        padding-right: 0.75rem;
         padding-bottom: 0;
     }
 
     .schedule-image-cell {
-        grid-column: 1;
-        grid-row: 2;
+        float: left;
+        clear: left;
+        width: 24%;
+        padding-right: 0.75rem;
         padding-top: 10px;
     }
 
@@ -350,8 +364,8 @@ li {
     }
 
     .schedule-info-cell {
-        grid-column: 2;
-        grid-row: 1 / span 2;
+        width: auto;
+        margin-left: 24%;
         min-width: 0;
     }
 }

@@ -548,6 +548,66 @@ li {
     text-decoration: line-through;
 }
 
+.papers-loading,
+.papers-error {
+    text-align: center;
+}
+
+.papers-loading {
+    color: #666;
+}
+
+.papers-error {
+    color: #d9534f;
+}
+
+.paper-entry {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.paper-title {
+    display: inline;
+    color: #000;
+    font-weight: bold;
+}
+
+.paper-badge {
+    margin-left: 8px;
+}
+
+.paper-authors {
+    font-style: italic;
+}
+
+.paper-forum-link {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0 3px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    color: #d9534f;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.paper-forum-link:hover,
+.paper-forum-link:focus {
+    color: #b52b27;
+    text-decoration: none;
+}
+
+.paper-abstract-toggle {
+    margin-top: 4px;
+}
+
+.paper-abstract-body {
+    margin-top: 10px;
+    text-align: justify;
+}
+
 .contact-text {
     display: block;
     text-align: left;

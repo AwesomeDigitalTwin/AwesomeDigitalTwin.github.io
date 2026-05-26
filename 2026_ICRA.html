@@ -39,11 +39,8 @@
                     <a class="nav-link js-scroll-trigger" href="#schedule">Schedule & Speakers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#callpapers">Call for Papers </a>
+                    <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
                 </li>
-                <!--  				<li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
-                                    </li> -->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
                 </li>
@@ -62,7 +59,7 @@
             </p>
             <p class="subtitle">
                 IEEE International Conference on Robotics & Automation (ICRA 2026) <br>
-                June 1st, 2026 - Vienna, Austria
+                June 1st, 2026 - <a href="https://vieconcenter.at/#3DKarte" target="_blank" rel="noopener noreferrer">Hall A3</a> - Vienna, Austria
             </p>
         </div>
     </div>
@@ -110,7 +107,7 @@
         <div class="row">
             <div class="col-md-10 mx-auto">
                 <span class="titlesec">Schedule & Speakers</span>
-                June 1st, 2026 - Vienna, Austria
+                June 1st, 2026 - <a href="https://vieconcenter.at/#3DKarte" target="_blank" rel="noopener noreferrer">Hall A3</a> - Vienna, Austria
                 <table class="table table-striped">
                     <colgroup>
                         <col class="schedule-time-col">
@@ -208,7 +205,7 @@
                     <tr>
                         <td class="schedule-time-cell"><b> 12:00 </b></td>
                         <td class="schedule-image-cell"></td>
-                        <td class="schedule-info-cell"><b>Spotlight talks</b></td>
+                        <td class="schedule-info-cell"><b><span class="badge badge-warning">Spotlight</span> talks</b></td>
                     </tr>
                     <tr>
                         <td class="schedule-time-cell"><b> 12:30 </b></td>
@@ -311,82 +308,78 @@
 </section>
 
 <hr class="half-rule"/>
+<section id="papers" class="section-flush-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <span class="titlesec">Accepted Papers</span><br>
+
+                <div id="papers-container">
+                    <p class="papers-loading">Loading papers...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="half-rule"/>
 <section id="callpapers" class="section-flush-top">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
-                <span class="titlesec">Call for Papers</span><br>
-
                 <div class="collapsible-section">
                     <button type="button" class="collapsible-header collapsed" data-toggle="collapse"
-                            data-target="#targeted-topics-more" aria-expanded="false"
-                            aria-controls="targeted-topics-more">
-                        <span class="collapsible-title">Targeted Topics</span>
+                            data-target="#callpapers-more" aria-expanded="false"
+                            aria-controls="callpapers-more">
+                        <span class="titlesec">Call for Papers</span>
                         <span class="collapsible-control">
                             <span class="collapsible-chevron" aria-hidden="true">▼</span>
                             <span class="collapsible-state-expand">(click to expand)</span>
                             <span class="collapsible-state-collapse">(click to collapse)</span>
                         </span>
                     </button>
-                    <div class="collapsible-content">
-                        <p class="collapsible-preview">
+                    <div id="callpapers-more" class="collapse collapsible-content">
+                        <h5 class="subsection-heading">Targeted Topics</h5>
+                        <p>
                             The gDT-IV Workshop at ICRA 2026 welcomes submissions on all aspects of generating digital twins from
                             images and videos, especially (but not limited to):
                         </p>
-                        <button type="button" class="collapsible-expand-prompt" data-toggle="collapse"
-                                data-target="#targeted-topics-more" aria-expanded="false"
-                                aria-controls="targeted-topics-more">(click to expand)</button>
+                        <ul>
+                            <!-- <li>Applications of digital twins in robotics, media content creation, AI-driven video synthesis,
+                                interior design, construction monitoring, and gaming.
+                            </li>
+                            <li>Streaming and compression techniques for sharing large 3D scenes over the web.</li>
+                            <li>Synchronization of the Digital Twin model with the video stream.</li>
+                            <li>3D Gaussian Splatting (3DGS) and its extensions for dynamic scenes.</li>
+                            <li>Lighting variations, shadows, material properties, and reflections in 3DGS reconstruction.</li>
+                            <li>Modeling articulated object parts and their motion constraints from video (e.g., cabinets).</li>
+                            <li>Inpainting and completion techniques for occluded regions in complex indoor scenes.</li>
+                            <li>Retrieval-based and generative hybrid pipelines for 3D object and scene creation.</li>
+                            <li>Learning object properties (mass, softness, friction) from videos.</li>
+                            <li>Physics-informed 3D generation, blending physical simulation with visual generation.</li>
+                            <li>Semantic 3D segmentation for scene understanding (object-level vs. fine-grained).</li> -->
+                            <li>Real2Sim pipelines for automatically constructing and updating digital twins
+                                from multimodal robot data (e.g., RGB-D, point clouds, logs, demonstrations).</li>
+                            <li>Sim2Real transfer methods that leverage adaptive digital twins for policy
+                                learning, control, and planning in robotics.</li>
+                            <li>Hybrid physics-based and generative models to reduce dynamics, sensing,
+                                and appearance gaps between simulation and reality.</li>
+                            <li>Benchmarks, datasets, and evaluation protocols for Real2Sim and Sim2Real
+                                using digital twins in realistic robotic settings.</li>
+                            <li>Learning algorithms that use continuously updated twins for robust,
+                                scalable, and generalizable robot behavior.</li>
+                            <li>Applications of generative digital twins in industrial, household, and
+                                mobile/field robotics (manipulation, navigation, human–robot interaction, etc.).</li>
+                            <li>Scalable simulation and scenario generation frameworks built around
+                                fleet-level or environment-level digital twins.</li>
+                            <li>Safety, robustness, monitoring, and uncertainty modeling with digital twins
+                                in closed-loop robot operation.</li>
+                            <li>Cross-disciplinary approaches from computer graphics, vision, and machine
+                                learning applied to digital twins for robotics.</li>
+                        </ul>
 
-                        <div id="targeted-topics-more" class="collapse">
-                            <ul>
-                                <!-- <li>Applications of digital twins in robotics, media content creation, AI-driven video synthesis,
-                                    interior design, construction monitoring, and gaming.
-                                </li>
-                                <li>Streaming and compression techniques for sharing large 3D scenes over the web.</li>
-                                <li>Synchronization of the Digital Twin model with the video stream.</li>
-                                <li>3D Gaussian Splatting (3DGS) and its extensions for dynamic scenes.</li>
-                                <li>Lighting variations, shadows, material properties, and reflections in 3DGS reconstruction.</li>
-                                <li>Modeling articulated object parts and their motion constraints from video (e.g., cabinets).</li>
-                                <li>Inpainting and completion techniques for occluded regions in complex indoor scenes.</li>
-                                <li>Retrieval-based and generative hybrid pipelines for 3D object and scene creation.</li>
-                                <li>Learning object properties (mass, softness, friction) from videos.</li>
-                                <li>Physics-informed 3D generation, blending physical simulation with visual generation.</li>
-                                <li>Semantic 3D segmentation for scene understanding (object-level vs. fine-grained).</li> -->
-                                <li>Real2Sim pipelines for automatically constructing and updating digital twins
-                                    from multimodal robot data (e.g., RGB-D, point clouds, logs, demonstrations).</li>
-                                <li>Sim2Real transfer methods that leverage adaptive digital twins for policy
-                                    learning, control, and planning in robotics.</li>
-                                <li>Hybrid physics-based and generative models to reduce dynamics, sensing,
-                                    and appearance gaps between simulation and reality.</li>
-                                <li>Benchmarks, datasets, and evaluation protocols for Real2Sim and Sim2Real
-                                    using digital twins in realistic robotic settings.</li>
-                                <li>Learning algorithms that use continuously updated twins for robust,
-                                    scalable, and generalizable robot behavior.</li>
-                                <li>Applications of generative digital twins in industrial, household, and
-                                    mobile/field robotics (manipulation, navigation, human–robot interaction, etc.).</li>
-                                <li>Scalable simulation and scenario generation frameworks built around
-                                    fleet-level or environment-level digital twins.</li>
-                                <li>Safety, robustness, monitoring, and uncertainty modeling with digital twins
-                                    in closed-loop robot operation.</li>
-                                <li>Cross-disciplinary approaches from computer graphics, vision, and machine
-                                    learning applied to digital twins for robotics.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapsible-section">
-                    <button type="button" class="collapsible-header collapsed" data-toggle="collapse"
-                            data-target="#submission-information-more" aria-expanded="false"
-                            aria-controls="submission-information-more">
-                        <span class="collapsible-title">Submission Information</span>
-                        <span class="collapsible-control">
-                            <span class="collapsible-chevron" aria-hidden="true">▼</span>
-                            <span class="collapsible-state-expand">(click to expand)</span>
-                            <span class="collapsible-state-collapse">(click to collapse)</span>
-                        </span>
-                    </button>
-                    <div class="collapsible-content">
-                        <p class="collapsible-preview">
+                        <h5 class="subsection-heading">Submission Information</h5>
+                        <p>
                             We welcome <b>Non-Archival </b> contributions, submitted via the OpenReview portal. Specifically, we welcome a wide range of contributions including
                             <i>extended abstracts &amp; short papers</i> (up to 8 pages, suitable for work in
                             progress, negative results, or position papers; references and appendices may extend
@@ -396,56 +389,50 @@
                             published at major conferences are also welcome. Authors may also submit their work to
                             future conferences or journals after acceptance to this workshop.
                         </p>
-                        <button type="button" class="collapsible-expand-prompt" data-toggle="collapse"
-                                data-target="#submission-information-more" aria-expanded="false"
-                                aria-controls="submission-information-more">(click to expand)</button>
 
-                        <div id="submission-information-more" class="collapse">
-                            <p>
-                                Dual CVPR 2026 submissions must follow the <a href="https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines" target="_blank" rel="noopener noreferrer"> dual submission policy</a>. In brief: peer‑reviewed workshop papers longer than four pages (excluding references) are considered publications; we then encourage to submit the same work to the ICRA 2026 workshop if no longer than 4 pages.
-                            </p>
+                        <p>
+                            Dual CVPR 2026 submissions must follow the <a href="https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines" target="_blank" rel="noopener noreferrer"> dual submission policy</a>. In brief: peer‑reviewed workshop papers longer than four pages (excluding references) are considered publications; we then encourage to submit the same work to the ICRA 2026 workshop if no longer than 4 pages.
+                        </p>
 
-                            <p>
-                                <b>Submit via OpenReview</b> <a
-                                    href="https://openreview.net/group?id=IEEE.org/ICRA/2026/Workshop/Real2Sim2Real#tab-your-consoles"
-                                    target="_blank" rel="noopener noreferrer">Real2Sim2Real Submission Portal</a>
-                            </p>
+                        <p>
+                            <b>Submit via OpenReview</b> <a
+                                href="https://openreview.net/group?id=IEEE.org/ICRA/2026/Workshop/Real2Sim2Real#tab-your-consoles"
+                                target="_blank" rel="noopener noreferrer">Real2Sim2Real Submission Portal</a>
+                        </p>
 
-                            <h6 class="subsection-heading">Submission Instructions</h6>
-                            <p>
-                                Authors planning to submit are strongly encouraged to create their OpenReview profiles well in advance of the submission deadline.
-                            </p>
-                            <p>
-                                Please note OpenReview's moderation policy for newly created accounts:
-                            </p>
-                            <ul>
-                                <li><b>Profiles created <i>without</i> an institutional email address</b> will undergo a moderation process that may take <b>up to two weeks</b> before activation.</li>
-                                <li><b>Profiles created <i>with</i> an institutional email address</b> are typically <b>activated automatically</b>.</li>
-                            </ul>
-                            <p>
-                                To avoid last-minute issues with submission access, we recommend registering early and, when possible, using an institutional email address.
-                            </p>
-                            <p>
-                                As part of your contribution to the workshop, we kindly ask that the authors of each submitted paper collectively complete three reviews of other submissions. We hope this offers a valuable opportunity to engage with and learn from other work in your area of interest, and it is essential for ensuring the review process runs smoothly. Please note that papers whose authors do not make the required review contribution may be subject to desk rejection. The review process will be double-blind. Reviews will only be accessible to the chairs, reviewers, and authors. The deadline for submitting reviews is April 5th, Anywhere on Earth (AOE).
+                        <h6 class="subsection-heading">Submission Instructions</h6>
+                        <p>
+                            Authors planning to submit are strongly encouraged to create their OpenReview profiles well in advance of the submission deadline.
+                        </p>
+                        <p>
+                            Please note OpenReview's moderation policy for newly created accounts:
+                        </p>
+                        <ul>
+                            <li><b>Profiles created <i>without</i> an institutional email address</b> will undergo a moderation process that may take <b>up to two weeks</b> before activation.</li>
+                            <li><b>Profiles created <i>with</i> an institutional email address</b> are typically <b>activated automatically</b>.</li>
+                        </ul>
+                        <p>
+                            To avoid last-minute issues with submission access, we recommend registering early and, when possible, using an institutional email address.
+                        </p>
+                        <p>
+                            As part of your contribution to the workshop, we kindly ask that the authors of each submitted paper collectively complete three reviews of other submissions. We hope this offers a valuable opportunity to engage with and learn from other work in your area of interest, and it is essential for ensuring the review process runs smoothly. Please note that papers whose authors do not make the required review contribution may be subject to desk rejection. The review process will be double-blind. Reviews will only be accessible to the chairs, reviewers, and authors. The deadline for submitting reviews is April 5th, Anywhere on Earth (AOE).
+                        </p>
 
-                            </p>
-                        </div>
+                        <h5 class="subsection-heading">Important Dates</h5>
+                        <ul>
+                            <li class="important-date-passed">
+                                Submission Deadline: March 22, 2026 (AOE)
+<!--                        <span id="countdown-nonarchival-submission" class="countdown-timer"></span>-->
+                            </li>
+                            <li class="important-date-passed">
+                                Author Notifications: April 15, 2026 (AOE)
+                            </li>
+                            <li class="important-date-passed">
+                                Camera-Ready: April 30, 2026 (AOE)
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <h5 class="subsection-heading">Important Dates</h5>
-                <ul>
-                    <li class="important-date-passed">
-                        Submission Deadline: March 22, 2026 (AOE)
-<!--                        <span id="countdown-nonarchival-submission" class="countdown-timer"></span>-->
-                    </li>
-                    <li class="important-date-passed">
-                        Author Notifications: April 15, 2026 (AOE)
-                    </li>
-                    <li class="important-date-passed">
-                        Camera-Ready: April 30, 2026 (AOE)
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

@@ -86,9 +86,13 @@
         var abstract = escapeHTML(paper.abstract);
         var forumId = String(paper.forum_id || "").trim();
         var isSpotlight = String(paper.spotlight || "").toLowerCase() === "true";
+        var isBestPaper = String(paper.best_paper || "").toLowerCase() === "true";
         var openReviewUrl = forumId ? "https://openreview.net/forum?id=" + encodeURIComponent(forumId) : "";
         var spotlightBadge = isSpotlight
             ? '<span class="badge badge-warning paper-badge">Spotlight</span>'
+            : "";
+        var bestPaperBadge = isBestPaper
+            ? '<span class="badge badge-danger paper-badge">Best paper</span>'
             : "";
         var forumLink = openReviewUrl
             ? '<a class="paper-forum-link" href="' + openReviewUrl + '" target="_blank" rel="noopener noreferrer" aria-label="Open paper forum" title="OpenReview forum">PDF</a>'
@@ -97,7 +101,7 @@
         return [
             '<div class="paper-entry">',
             '    <h5 class="paper-title">' + title + '</h5>',
-            '    ' + spotlightBadge,
+            '    ' + spotlightBadge + bestPaperBadge,
             '    <br>',
             '    <span class="paper-authors">' + authors + '</span>',
             '    <br>',

@@ -312,6 +312,16 @@ li {
     width: 100%;
 }
 
+.presentation-video-link {
+    color: #000;
+    font-size: 0.85em;
+}
+
+.presentation-video-link:hover,
+.presentation-video-link:focus {
+    color: #000;
+}
+
 #schedule table td:nth-child(3),
 #schedule table th:nth-child(3) {
     text-align: left;
